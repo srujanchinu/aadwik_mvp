@@ -1,0 +1,15 @@
+{
+  "schema": "aadwik-audio-package-1.0",
+  "story": "The Last Star",
+  "scenes": 14,
+  "shots": 41,
+  "tracks": {
+    "voice": 3,
+    "dialogue_lines": 4,
+    "music_cues": 3,
+    "sfx_cues": 3,
+    "ambience_cues": 3
+  },
+  "synchronized": true,
+  "provider_agnostic": true
+}

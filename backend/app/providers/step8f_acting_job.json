@@ -1,0 +1,123 @@
+{
+  "title": "The Last Star",
+  "shots": [
+    {
+      "shot_id": "s01",
+      "event_type": "discovery",
+      "characters": [
+        "char_tara_v1"
+      ],
+      "emotion": "wonder",
+      "start_frame": 1,
+      "end_frame": 32,
+      "acting_directives": [
+        {
+          "character_id": "char_tara_v1",
+          "action": "look",
+          "emotion": "wonder",
+          "start_frame": 1,
+          "end_frame": 32
+        }
+      ],
+      "acting_director_locked": true
+    },
+    {
+      "shot_id": "s02",
+      "event_type": "journey",
+      "characters": [
+        "char_tara_v1",
+        "char_guardian_v1"
+      ],
+      "emotion": "cautious",
+      "start_frame": 1,
+      "end_frame": 32,
+      "acting_directives": [
+        {
+          "character_id": "char_tara_v1",
+          "action": "walk",
+          "emotion": "cautious",
+          "start_frame": 1,
+          "end_frame": 32
+        },
+        {
+          "character_id": "char_guardian_v1",
+          "action": "injured",
+          "emotion": "cautious",
+          "start_frame": 1,
+          "end_frame": 32
+        }
+      ],
+      "acting_director_locked": true
+    },
+    {
+      "shot_id": "s03",
+      "event_type": "conflict",
+      "characters": [
+        "char_tara_v1",
+        "char_guardian_v1",
+        "char_shadow_creature_v1"
+      ],
+      "emotion": "fear",
+      "start_frame": 1,
+      "end_frame": 32,
+      "acting_directives": [
+        {
+          "character_id": "char_tara_v1",
+          "action": "threaten",
+          "emotion": "fear",
+          "start_frame": 1,
+          "end_frame": 32
+        },
+        {
+          "character_id": "char_guardian_v1",
+          "action": "injured",
+          "emotion": "fear",
+          "start_frame": 1,
+          "end_frame": 32
+        },
+        {
+          "character_id": "char_shadow_creature_v1",
+          "action": "threaten",
+          "emotion": "fear",
+          "start_frame": 1,
+          "end_frame": 32
+        }
+      ],
+      "acting_director_locked": true
+    },
+    {
+      "shot_id": "s04",
+      "event_type": "resolution",
+      "characters": [
+        "char_tara_v1",
+        "char_guardian_v1"
+      ],
+      "emotion": "hope",
+      "start_frame": 1,
+      "end_frame": 32,
+      "acting_directives": [
+        {
+          "character_id": "char_tara_v1",
+          "action": "reach",
+          "emotion": "hope",
+          "start_frame": 1,
+          "end_frame": 32
+        },
+        {
+          "character_id": "char_guardian_v1",
+          "action": "look",
+          "emotion": "hope",
+          "start_frame": 1,
+          "end_frame": 32
+        }
+      ],
+      "acting_director_locked": true
+    }
+  ],
+  "acting_system": {
+    "schema": "aadwik-acting-director-1.0",
+    "deterministic": true,
+    "story_driven": true,
+    "identity_locked": true
+  }
+}

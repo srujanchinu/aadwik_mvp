@@ -1,0 +1,130 @@
+{
+  "title": "The Last Star",
+  "shots": [
+    {
+      "shot_id": "scene_02_shot_01",
+      "event_type": "discovery",
+      "characters": [
+        "char_tara_v1"
+      ],
+      "emotion": "wonder",
+      "camera_id": "CAM_02_01",
+      "framing": "wide",
+      "lens_mm": 35,
+      "camera_movement": "push_in",
+      "asset_bindings": [
+        {
+          "character_id": "char_tara_v1",
+          "asset_id": "char_tara_v1",
+          "blender_root": "CHAR_TARA_ROOT",
+          "action": "look",
+          "emotion": "wonder"
+        }
+      ],
+      "camera_binding": {
+        "camera_id": "CAM_02_01",
+        "framing": "wide",
+        "lens_mm": 35,
+        "movement": "push_in",
+        "camera_locked": true
+      },
+      "production_ready": true
+    },
+    {
+      "shot_id": "scene_09_shot_01",
+      "event_type": "conflict",
+      "characters": [
+        "char_tara_v1",
+        "char_guardian_v1",
+        "char_shadow_creature_v1"
+      ],
+      "emotion": "fear",
+      "camera_id": "CAM_09_01",
+      "framing": "medium_wide",
+      "lens_mm": 50,
+      "camera_movement": "slow_dolly",
+      "asset_bindings": [
+        {
+          "character_id": "char_tara_v1",
+          "asset_id": "char_tara_v1",
+          "blender_root": "CHAR_TARA_ROOT",
+          "action": "look",
+          "emotion": "fear"
+        },
+        {
+          "character_id": "char_guardian_v1",
+          "asset_id": "char_guardian_v1",
+          "blender_root": "CHAR_GUARDIAN_ROOT",
+          "action": "injured",
+          "emotion": "fear"
+        },
+        {
+          "character_id": "char_shadow_creature_v1",
+          "asset_id": "char_shadow_creature_v1",
+          "blender_root": "CHAR_SHADOW_ROOT",
+          "action": "threaten",
+          "emotion": "fear"
+        }
+      ],
+      "camera_binding": {
+        "camera_id": "CAM_09_01",
+        "framing": "medium_wide",
+        "lens_mm": 50,
+        "movement": "slow_dolly",
+        "camera_locked": true
+      },
+      "production_ready": true
+    },
+    {
+      "shot_id": "scene_11_shot_01",
+      "event_type": "resolution",
+      "characters": [
+        "char_tara_v1",
+        "char_guardian_v1",
+        "prop_blue_star_v1"
+      ],
+      "emotion": "hope",
+      "camera_id": "CAM_11_01",
+      "framing": "close",
+      "lens_mm": 70,
+      "camera_movement": "orbit",
+      "asset_bindings": [
+        {
+          "character_id": "char_tara_v1",
+          "asset_id": "char_tara_v1",
+          "blender_root": "CHAR_TARA_ROOT",
+          "action": "reach",
+          "emotion": "hope"
+        },
+        {
+          "character_id": "char_guardian_v1",
+          "asset_id": "char_guardian_v1",
+          "blender_root": "CHAR_GUARDIAN_ROOT",
+          "action": "look",
+          "emotion": "hope"
+        },
+        {
+          "character_id": "prop_blue_star_v1",
+          "asset_id": "prop_blue_star_v1",
+          "blender_root": "PROP_BLUE_STAR",
+          "action": "idle",
+          "emotion": "hope"
+        }
+      ],
+      "camera_binding": {
+        "camera_id": "CAM_11_01",
+        "framing": "close",
+        "lens_mm": 70,
+        "movement": "orbit",
+        "camera_locked": true
+      },
+      "production_ready": true
+    }
+  ],
+  "integration": {
+    "schema": "aadwik-character-acting-camera-1.0",
+    "asset_identity_locked": true,
+    "acting_locked": true,
+    "camera_locked": true
+  }
+}

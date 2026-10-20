@@ -1,0 +1,26 @@
+{
+  "title": "Aadwik Production",
+  "prompt": "A little boy walked through a bright green garden. He saw colorful butterflies and beautiful flowers.\nHe smiled at the camera and waved.\n\u201cHello, friends!\u201d \ud83d\udc4b\nThe trees danced gently in the breeze. The boy waved once more and happily continued walking.\nThe End.",
+  "scenes": [
+    {
+      "location": "forest",
+      "emotion": "curious",
+      "action": "Maya discovers a magical star"
+    },
+    {
+      "location": "forest",
+      "emotion": "wonder",
+      "action": "Maya helps the lost star"
+    },
+    {
+      "location": "forest",
+      "emotion": "protect",
+      "action": "Maya protects the star"
+    },
+    {
+      "location": "forest",
+      "emotion": "joy",
+      "action": "the star returns to the sky"
+    }
+  ]
+}

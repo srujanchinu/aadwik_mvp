@@ -1,0 +1,2078 @@
+{
+  "schema_version": "aadwik-production-1.0",
+  "title": "The Last Star",
+  "story": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest. She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree. The creature is actually a young guardian whose magical star has been stolen by a shadow creature. Tara decides to help. Together they journey through the moonlit forest, cross a glowing river, and enter an abandoned stone temple. Inside, Tara must face the shadow creature—not with a weapon, but with courage and compassion. When she returns the star to the guardian, the entire forest comes alive with light. At sunrise, Tara returns home and discovers that one tiny star is still glowing in her hand.",
+  "metadata": {
+    "style": "stylized cinematic 3D",
+    "aspect_ratio": "16:9",
+    "language": "English",
+    "genre": "Adventure",
+    "age_group": "All Ages"
+  },
+  "character_lock": {
+    "count": 4,
+    "characters": [
+      {
+        "id": "tara",
+        "name": "Tara",
+        "type": "human",
+        "role": "protagonist",
+        "visual_identity": {
+          "appearance": "consistent stylized 3D human character",
+          "face_lock": true,
+          "body_lock": true,
+          "clothing_lock": true,
+          "color_palette_lock": true
+        },
+        "continuity_rules": [
+          "same identity in every scene",
+          "same proportions",
+          "same clothing unless explicitly changed"
+        ]
+      },
+      {
+        "id": "girl",
+        "name": "Girl",
+        "type": "human",
+        "role": "protagonist",
+        "visual_identity": {
+          "appearance": "consistent stylized 3D girl character",
+          "face_lock": true,
+          "body_lock": true,
+          "clothing_lock": true,
+          "color_palette_lock": true
+        },
+        "continuity_rules": [
+          "same identity in every scene",
+          "same proportions",
+          "same clothing unless explicitly changed"
+        ]
+      },
+      {
+        "id": "guardian",
+        "name": "Guardian",
+        "type": "fantasy_creature",
+        "role": "companion",
+        "visual_identity": {
+          "appearance": "small injured magical guardian creature",
+          "face_lock": true,
+          "body_lock": true,
+          "clothing_lock": true,
+          "color_palette_lock": true
+        },
+        "continuity_rules": [
+          "same identity in every scene",
+          "same proportions",
+          "same clothing unless explicitly changed"
+        ]
+      },
+      {
+        "id": "shadow_creature",
+        "name": "Shadow Creature",
+        "type": "fantasy_creature",
+        "role": "antagonist",
+        "visual_identity": {
+          "appearance": "dark smoky supernatural creature with glowing eyes",
+          "face_lock": true,
+          "body_lock": true,
+          "clothing_lock": true,
+          "color_palette_lock": true
+        },
+        "continuity_rules": [
+          "same identity in every scene",
+          "same proportions",
+          "same clothing unless explicitly changed"
+        ]
+      }
+    ]
+  },
+  "world_lock": {
+    "count": 7,
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "environment_style": "cinematic stylized 3D",
+        "layout_lock": true,
+        "lighting_identity": true,
+        "color_identity": true,
+        "continuity_rules": [
+          "same major landmarks",
+          "same environmental identity across shots"
+        ]
+      },
+      {
+        "id": "sky",
+        "name": "Sky",
+        "environment_style": "cinematic stylized 3D",
+        "layout_lock": true,
+        "lighting_identity": true,
+        "color_identity": true,
+        "continuity_rules": [
+          "same major landmarks",
+          "same environmental identity across shots"
+        ]
+      },
+      {
+        "id": "forest",
+        "name": "Forest",
+        "environment_style": "cinematic stylized 3D",
+        "layout_lock": true,
+        "lighting_identity": true,
+        "color_identity": true,
+        "continuity_rules": [
+          "same major landmarks",
+          "same environmental identity across shots"
+        ]
+      },
+      {
+        "id": "ancient_tree",
+        "name": "Ancient Tree",
+        "environment_style": "cinematic stylized 3D",
+        "layout_lock": true,
+        "lighting_identity": true,
+        "color_identity": true,
+        "continuity_rules": [
+          "same major landmarks",
+          "same environmental identity across shots"
+        ]
+      },
+      {
+        "id": "river",
+        "name": "River",
+        "environment_style": "cinematic stylized 3D",
+        "layout_lock": true,
+        "lighting_identity": true,
+        "color_identity": true,
+        "continuity_rules": [
+          "same major landmarks",
+          "same environmental identity across shots"
+        ]
+      },
+      {
+        "id": "temple",
+        "name": "Temple",
+        "environment_style": "cinematic stylized 3D",
+        "layout_lock": true,
+        "lighting_identity": true,
+        "color_identity": true,
+        "continuity_rules": [
+          "same major landmarks",
+          "same environmental identity across shots"
+        ]
+      },
+      {
+        "id": "home",
+        "name": "Home",
+        "environment_style": "cinematic stylized 3D",
+        "layout_lock": true,
+        "lighting_identity": true,
+        "color_identity": true,
+        "continuity_rules": [
+          "same major landmarks",
+          "same environmental identity across shots"
+        ]
+      }
+    ]
+  },
+  "prop_lock": {
+    "count": 3,
+    "props": [
+      {
+        "id": "lanterns",
+        "name": "lanterns",
+        "visual_identity": "distinctive cinematic 3D prop",
+        "shape_lock": true,
+        "material_lock": true,
+        "color_lock": true,
+        "continuity_rules": [
+          "same object identity whenever it reappears"
+        ]
+      },
+      {
+        "id": "blue_star",
+        "name": "blue_star",
+        "visual_identity": "distinctive cinematic 3D prop",
+        "shape_lock": true,
+        "material_lock": true,
+        "color_lock": true,
+        "continuity_rules": [
+          "same object identity whenever it reappears"
+        ]
+      },
+      {
+        "id": "ancient_tree",
+        "name": "ancient_tree",
+        "visual_identity": "distinctive cinematic 3D prop",
+        "shape_lock": true,
+        "material_lock": true,
+        "color_lock": true,
+        "continuity_rules": [
+          "same object identity whenever it reappears"
+        ]
+      }
+    ]
+  },
+  "scenes": [
+    {
+      "scene_number": 1,
+      "scene_id": "scene_01",
+      "title": "Village Festival",
+      "type": "establishing",
+      "story_text": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+      "location": "village",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "joy",
+      "shots": [
+        {
+          "shot_id": "scene_01_shot_01",
+          "scene_number": 1,
+          "shot_number": 1,
+          "shot_type": "wide_establishing",
+          "framing": "wide",
+          "lens": "24mm",
+          "camera_movement": "slow crane/dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "village",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Establish the environment before the action.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "joy",
+          "composition": "cinematic environmental composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_01_shot_02",
+          "scene_number": 1,
+          "shot_number": 2,
+          "shot_type": "subject_action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "village",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the characters performing the story action.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "joy",
+          "composition": "clear character blocking and readable action",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_01_shot_03",
+          "scene_number": 1,
+          "shot_number": 3,
+          "shot_type": "emotional_detail",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "village",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Capture the emotional consequence of the moment.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "joy",
+          "composition": "expressive face/creature detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 2,
+      "scene_id": "scene_02",
+      "title": "Blue Star Falls",
+      "type": "discovery",
+      "story_text": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+      "location": "sky",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "wonder",
+      "shots": [
+        {
+          "shot_id": "scene_02_shot_01",
+          "scene_number": 2,
+          "shot_number": 1,
+          "shot_type": "context",
+          "framing": "wide",
+          "lens": "28mm",
+          "camera_movement": "slow dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "sky",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show where the event happens and who is present.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "wonder",
+          "composition": "strong foreground/midground/background depth",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_02_shot_02",
+          "scene_number": 2,
+          "shot_number": 2,
+          "shot_type": "action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking_or_handheld",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "sky",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the central story action clearly.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "wonder",
+          "composition": "dynamic blocking",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_02_shot_03",
+          "scene_number": 2,
+          "shot_number": 3,
+          "shot_type": "reaction",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "sky",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the key character reaction.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "wonder",
+          "composition": "emotion-first framing",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 3,
+      "scene_id": "scene_03",
+      "title": "Glowing Trail into the Forest",
+      "type": "journey",
+      "story_text": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+      "location": "forest",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "curiosity",
+      "shots": [
+        {
+          "shot_id": "scene_03_shot_01",
+          "scene_number": 3,
+          "shot_number": 1,
+          "shot_type": "wide_establishing",
+          "framing": "wide",
+          "lens": "24mm",
+          "camera_movement": "slow crane/dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Establish the environment before the action.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "curiosity",
+          "composition": "cinematic environmental composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_03_shot_02",
+          "scene_number": 3,
+          "shot_number": 2,
+          "shot_type": "subject_action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the characters performing the story action.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "curiosity",
+          "composition": "clear character blocking and readable action",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_03_shot_03",
+          "scene_number": 3,
+          "shot_number": 3,
+          "shot_type": "emotional_detail",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Capture the emotional consequence of the moment.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "curiosity",
+          "composition": "expressive face/creature detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 4,
+      "scene_id": "scene_04",
+      "title": "Injured Guardian Discovered",
+      "type": "companion",
+      "story_text": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+      "location": "ancient_tree",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "concern",
+      "shots": [
+        {
+          "shot_id": "scene_04_shot_01",
+          "scene_number": 4,
+          "shot_number": 1,
+          "shot_type": "context",
+          "framing": "wide",
+          "lens": "28mm",
+          "camera_movement": "slow dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "ancient_tree",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show where the event happens and who is present.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "concern",
+          "composition": "strong foreground/midground/background depth",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_04_shot_02",
+          "scene_number": 4,
+          "shot_number": 2,
+          "shot_type": "action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking_or_handheld",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "ancient_tree",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the central story action clearly.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "concern",
+          "composition": "dynamic blocking",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_04_shot_03",
+          "scene_number": 4,
+          "shot_number": 3,
+          "shot_type": "reaction",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "ancient_tree",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the key character reaction.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "concern",
+          "composition": "emotion-first framing",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 5,
+      "scene_id": "scene_05",
+      "title": "Guardian's Stolen Star Revealed",
+      "type": "revelation",
+      "story_text": "The creature is actually a young guardian whose magical star has been stolen by a shadow creature.",
+      "location": "forest",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "mystery",
+      "shots": [
+        {
+          "shot_id": "scene_05_shot_01",
+          "scene_number": 5,
+          "shot_number": 1,
+          "shot_type": "context",
+          "framing": "wide",
+          "lens": "28mm",
+          "camera_movement": "slow dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show where the event happens and who is present.",
+          "story_context": "The creature is actually a young guardian whose magical star has been stolen by a shadow creature.",
+          "emotion": "mystery",
+          "composition": "strong foreground/midground/background depth",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_05_shot_02",
+          "scene_number": 5,
+          "shot_number": 2,
+          "shot_type": "action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking_or_handheld",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the central story action clearly.",
+          "story_context": "The creature is actually a young guardian whose magical star has been stolen by a shadow creature.",
+          "emotion": "mystery",
+          "composition": "dynamic blocking",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_05_shot_03",
+          "scene_number": 5,
+          "shot_number": 3,
+          "shot_type": "reaction",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the key character reaction.",
+          "story_context": "The creature is actually a young guardian whose magical star has been stolen by a shadow creature.",
+          "emotion": "mystery",
+          "composition": "emotion-first framing",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 6,
+      "scene_id": "scene_06",
+      "title": "Journey Through the Moonlit Forest",
+      "type": "journey",
+      "story_text": "Together they journey through the moonlit forest, cross a glowing river, and enter an abandoned stone temple.",
+      "location": "forest",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "adventure",
+      "shots": [
+        {
+          "shot_id": "scene_06_shot_01",
+          "scene_number": 6,
+          "shot_number": 1,
+          "shot_type": "wide_establishing",
+          "framing": "wide",
+          "lens": "24mm",
+          "camera_movement": "slow crane/dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Establish the environment before the action.",
+          "story_context": "Together they journey through the moonlit forest, cross a glowing river, and enter an abandoned stone temple.",
+          "emotion": "adventure",
+          "composition": "cinematic environmental composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_06_shot_02",
+          "scene_number": 6,
+          "shot_number": 2,
+          "shot_type": "subject_action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the characters performing the story action.",
+          "story_context": "Together they journey through the moonlit forest, cross a glowing river, and enter an abandoned stone temple.",
+          "emotion": "adventure",
+          "composition": "clear character blocking and readable action",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_06_shot_03",
+          "scene_number": 6,
+          "shot_number": 3,
+          "shot_type": "emotional_detail",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Capture the emotional consequence of the moment.",
+          "story_context": "Together they journey through the moonlit forest, cross a glowing river, and enter an abandoned stone temple.",
+          "emotion": "adventure",
+          "composition": "expressive face/creature detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 7,
+      "scene_id": "scene_07",
+      "title": "Glowing River Crossing",
+      "type": "journey",
+      "story_text": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+      "location": "river",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "wonder",
+      "shots": [
+        {
+          "shot_id": "scene_07_shot_01",
+          "scene_number": 7,
+          "shot_number": 1,
+          "shot_type": "wide_establishing",
+          "framing": "wide",
+          "lens": "24mm",
+          "camera_movement": "slow crane/dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "river",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Establish the environment before the action.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "wonder",
+          "composition": "cinematic environmental composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_07_shot_02",
+          "scene_number": 7,
+          "shot_number": 2,
+          "shot_type": "subject_action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "river",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the characters performing the story action.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "wonder",
+          "composition": "clear character blocking and readable action",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_07_shot_03",
+          "scene_number": 7,
+          "shot_number": 3,
+          "shot_type": "emotional_detail",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "river",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Capture the emotional consequence of the moment.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "wonder",
+          "composition": "expressive face/creature detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 8,
+      "scene_id": "scene_08",
+      "title": "Ancient Stone Temple",
+      "type": "reveal",
+      "story_text": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+      "location": "temple",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "mystery",
+      "shots": [
+        {
+          "shot_id": "scene_08_shot_01",
+          "scene_number": 8,
+          "shot_number": 1,
+          "shot_type": "wide_establishing",
+          "framing": "wide",
+          "lens": "24mm",
+          "camera_movement": "slow crane/dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Establish the environment before the action.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "mystery",
+          "composition": "cinematic environmental composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_08_shot_02",
+          "scene_number": 8,
+          "shot_number": 2,
+          "shot_type": "subject_action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the characters performing the story action.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "mystery",
+          "composition": "clear character blocking and readable action",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_08_shot_03",
+          "scene_number": 8,
+          "shot_number": 3,
+          "shot_type": "emotional_detail",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Capture the emotional consequence of the moment.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "mystery",
+          "composition": "expressive face/creature detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 9,
+      "scene_id": "scene_09",
+      "title": "Shadow Creature Appears",
+      "type": "conflict",
+      "story_text": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+      "location": "temple",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "tension",
+      "shots": [
+        {
+          "shot_id": "scene_09_shot_01",
+          "scene_number": 9,
+          "shot_number": 1,
+          "shot_type": "context",
+          "framing": "wide",
+          "lens": "28mm",
+          "camera_movement": "slow dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show where the event happens and who is present.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "tension",
+          "composition": "strong foreground/midground/background depth",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_09_shot_02",
+          "scene_number": 9,
+          "shot_number": 2,
+          "shot_type": "action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking_or_handheld",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the central story action clearly.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "tension",
+          "composition": "dynamic blocking",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_09_shot_03",
+          "scene_number": 9,
+          "shot_number": 3,
+          "shot_type": "reaction",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the key character reaction.",
+          "story_context": "She follows its glowing trail and discovers a tiny injured creature hiding beneath an ancient tree.",
+          "emotion": "tension",
+          "composition": "emotion-first framing",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 10,
+      "scene_id": "scene_10",
+      "title": "Tara Chooses Courage and Compassion",
+      "type": "choice",
+      "story_text": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+      "location": "temple",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "bravery",
+      "shots": [
+        {
+          "shot_id": "scene_10_shot_01",
+          "scene_number": 10,
+          "shot_number": 1,
+          "shot_type": "context",
+          "framing": "wide",
+          "lens": "28mm",
+          "camera_movement": "slow dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show where the event happens and who is present.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "bravery",
+          "composition": "strong foreground/midground/background depth",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_10_shot_02",
+          "scene_number": 10,
+          "shot_number": 2,
+          "shot_type": "action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking_or_handheld",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the central story action clearly.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "bravery",
+          "composition": "dynamic blocking",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_10_shot_03",
+          "scene_number": 10,
+          "shot_number": 3,
+          "shot_type": "reaction",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the key character reaction.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "bravery",
+          "composition": "emotion-first framing",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 11,
+      "scene_id": "scene_11",
+      "title": "Star Returned to the Guardian",
+      "type": "resolution",
+      "story_text": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+      "location": "temple",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "relief",
+      "shots": [
+        {
+          "shot_id": "scene_11_shot_01",
+          "scene_number": 11,
+          "shot_number": 1,
+          "shot_type": "context",
+          "framing": "wide",
+          "lens": "28mm",
+          "camera_movement": "slow dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show where the event happens and who is present.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "relief",
+          "composition": "strong foreground/midground/background depth",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_11_shot_02",
+          "scene_number": 11,
+          "shot_number": 2,
+          "shot_type": "action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking_or_handheld",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the central story action clearly.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "relief",
+          "composition": "dynamic blocking",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_11_shot_03",
+          "scene_number": 11,
+          "shot_number": 3,
+          "shot_type": "reaction",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "temple",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the key character reaction.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "relief",
+          "composition": "emotion-first framing",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 12,
+      "scene_id": "scene_12",
+      "title": "Forest Comes Alive With Light",
+      "type": "transformation",
+      "story_text": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+      "location": "forest",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "wonder",
+      "shots": [
+        {
+          "shot_id": "scene_12_shot_01",
+          "scene_number": 12,
+          "shot_number": 1,
+          "shot_type": "wide_establishing",
+          "framing": "wide",
+          "lens": "24mm",
+          "camera_movement": "slow crane/dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Establish the environment before the action.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "wonder",
+          "composition": "cinematic environmental composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_12_shot_02",
+          "scene_number": 12,
+          "shot_number": 2,
+          "shot_type": "subject_action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the characters performing the story action.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "wonder",
+          "composition": "clear character blocking and readable action",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_12_shot_03",
+          "scene_number": 12,
+          "shot_number": 3,
+          "shot_type": "emotional_detail",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "forest",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Capture the emotional consequence of the moment.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "wonder",
+          "composition": "expressive face/creature detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 13,
+      "scene_id": "scene_13",
+      "title": "Sunrise Return Home",
+      "type": "ending",
+      "story_text": "When she returns the star to the guardian, the entire forest comes alive with light.",
+      "location": "home",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "peace",
+      "shots": [
+        {
+          "shot_id": "scene_13_shot_01",
+          "scene_number": 13,
+          "shot_number": 1,
+          "shot_type": "wide_establishing",
+          "framing": "wide",
+          "lens": "24mm",
+          "camera_movement": "slow crane/dolly",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "home",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Establish the environment before the action.",
+          "story_context": "When she returns the star to the guardian, the entire forest comes alive with light.",
+          "emotion": "peace",
+          "composition": "cinematic environmental composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_13_shot_02",
+          "scene_number": 13,
+          "shot_number": 2,
+          "shot_type": "subject_action",
+          "framing": "medium",
+          "lens": "50mm",
+          "camera_movement": "tracking",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "home",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the characters performing the story action.",
+          "story_context": "When she returns the star to the guardian, the entire forest comes alive with light.",
+          "emotion": "peace",
+          "composition": "clear character blocking and readable action",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_13_shot_03",
+          "scene_number": 13,
+          "shot_number": 3,
+          "shot_type": "emotional_detail",
+          "framing": "close_up",
+          "lens": "85mm",
+          "camera_movement": "slow push_in",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "home",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Capture the emotional consequence of the moment.",
+          "story_context": "When she returns the star to the guardian, the entire forest comes alive with light.",
+          "emotion": "peace",
+          "composition": "expressive face/creature detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    },
+    {
+      "scene_number": 14,
+      "scene_id": "scene_14",
+      "title": "The Tiny Star Remains in Her Hand",
+      "type": "final_image",
+      "story_text": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+      "location": "home",
+      "characters": [
+        "tara",
+        "girl",
+        "guardian",
+        "shadow_creature"
+      ],
+      "props": [],
+      "emotion": "hope",
+      "shots": [
+        {
+          "shot_id": "scene_14_shot_01",
+          "scene_number": 14,
+          "shot_number": 1,
+          "shot_type": "memory_wide",
+          "framing": "wide",
+          "lens": "35mm",
+          "camera_movement": "slow pull_back",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "home",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Show the quiet final environment.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "hope",
+          "composition": "peaceful composition",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        },
+        {
+          "shot_id": "scene_14_shot_02",
+          "scene_number": 14,
+          "shot_number": 2,
+          "shot_type": "final_detail",
+          "framing": "close_up",
+          "lens": "100mm",
+          "camera_movement": "locked_off",
+          "camera_direction": "follow story action; preserve screen direction",
+          "location": "home",
+          "characters": [
+            "tara",
+            "girl",
+            "guardian",
+            "shadow_creature"
+          ],
+          "props": [],
+          "primary_action": "Hold on the important final visual object.",
+          "story_context": "On the night of a village festival, a curious 12-year-old girl named Tara sees a strange blue star fall from the sky and disappear into the nearby forest.",
+          "emotion": "hope",
+          "composition": "hero prop detail",
+          "lighting": "motivated by location, time and story emotion",
+          "depth": "foreground + subject + background layers",
+          "continuity": {
+            "character_lock": true,
+            "world_lock": true,
+            "prop_lock": true,
+            "screen_direction_lock": true
+          },
+          "negative_constraints": [
+            "do not redesign locked characters",
+            "do not change locked clothing",
+            "do not replace the location with a generic set",
+            "do not introduce unrelated characters or props",
+            "do not make the shot static unless specified"
+          ]
+        }
+      ],
+      "continuity": {
+        "character_lock": true,
+        "world_lock": true,
+        "props_lock": true
+      }
+    }
+  ],
+  "shot_plan": {
+    "version": "1.0",
+    "status": "complete",
+    "scene_count": 14,
+    "shot_count": 41,
+    "rules": [
+      "story action drives shots",
+      "locked assets are mandatory",
+      "camera changes serve narrative"
+    ]
+  },
+  "production_summary": {
+    "scene_count": 14,
+    "shot_count": 41,
+    "characters": 4,
+    "character_lock_count": 4,
+    "world_lock_count": 7,
+    "prop_lock_count": 3,
+    "continuity_locked": true,
+    "shot_plan_complete": true
+  }
+}

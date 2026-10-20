@@ -1,0 +1,26 @@
+{
+  "title": "Aadwik Production",
+  "prompt": "A little boy walks happily through a beautiful green garden on a sunny morning. Colorful butterflies flutter around him, and bright flowers sway gently in the breeze.\n\nThe boy notices a beautiful yellow butterfly sitting on a flower. He bends down, smiles, and says, \u201cHello, little friend!\u201d\n\nThe butterfly flutters around his head. The boy laughs, looks toward the camera, waves his hand, and says, \u201cHello, friends! Come and explore with me!\u201d\n\nHe walks toward a sparkling little stream as birds chirp and the trees sway gently.\n\nThe boy turns back, waves goodbye, and says, \u201cSee you soon!\u201d\n\nHe walks happily into the magical garden as the scene fades out.\n\nThe End.",
+  "scenes": [
+    {
+      "location": "forest",
+      "emotion": "curious",
+      "action": "Maya discovers a magical star"
+    },
+    {
+      "location": "forest",
+      "emotion": "wonder",
+      "action": "Maya helps the lost star"
+    },
+    {
+      "location": "forest",
+      "emotion": "protect",
+      "action": "Maya protects the star"
+    },
+    {
+      "location": "forest",
+      "emotion": "joy",
+      "action": "the star returns to the sky"
+    }
+  ]
+}

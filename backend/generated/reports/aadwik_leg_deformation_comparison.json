@@ -1,0 +1,273 @@
+{
+  "source": "C:\\Users\\olga_Ashok3\\aadwik_mvp\\backend\\generated\\aadwik_character_master_v3.blend",
+  "controller": "foot_ik.L",
+  "test_z_offset_m": 0.09,
+  "neutral_evaluated": {
+    "Human": {
+      "vertices": 9368,
+      "bounds": {
+        "x": [
+          -0.3207325339317322,
+          0.32073259353637695
+        ],
+        "y": [
+          -0.2003600001335144,
+          0.05647553876042366
+        ],
+        "z": [
+          0.4299112558364868,
+          0.9405491948127747
+        ]
+      },
+      "center": [
+        3.3269017124550486e-09,
+        -0.09156893314609539,
+        0.6648655363718838
+      ]
+    },
+    "Human.bob01": {
+      "vertices": 5203,
+      "bounds": {
+        "x": [
+          -0.09519772231578827,
+          0.08212780207395554
+        ],
+        "y": [
+          -0.13352763652801514,
+          0.07040588557720184
+        ],
+        "z": [
+          0.7811349034309387,
+          0.95950847864151
+        ]
+      },
+      "center": [
+        0.00527728704769635,
+        -0.04634836778074782,
+        0.8783512843152365
+      ]
+    },
+    "Human.female_sportsuit01": {
+      "vertices": 1797,
+      "bounds": {
+        "x": [
+          -0.16600444912910461,
+          0.16292303800582886
+        ],
+        "y": [
+          -0.1101827323436737,
+          0.06320524215698242
+        ],
+        "z": [
+          0.07257609814405441,
+          0.7620232105255127
+        ]
+      },
+      "center": [
+        -0.0008963909767954041,
+        -0.015767389768904225,
+        0.47895661596380873
+      ]
+    },
+    "Human.shoes05": {
+      "vertices": 1594,
+      "bounds": {
+        "x": [
+          -0.17652854323387146,
+          0.17652852833271027
+        ],
+        "y": [
+          -0.13959351181983948,
+          0.036877021193504333
+        ],
+        "z": [
+          0.007269939873367548,
+          0.1576259583234787
+        ]
+      },
+      "center": [
+        -5.959529649358771e-09,
+        -0.04494064946530754,
+        0.053697959688191806
+      ]
+    }
+  },
+  "posed_evaluated": {
+    "Human": {
+      "vertices": 9368,
+      "bounds": {
+        "x": [
+          -0.3207325339317322,
+          0.32073259353637695
+        ],
+        "y": [
+          -0.2003600001335144,
+          0.05647553876042366
+        ],
+        "z": [
+          0.43012210726737976,
+          0.9405491948127747
+        ]
+      },
+      "center": [
+        1.964869217514914e-06,
+        -0.09155614390209693,
+        0.6648661045184204
+      ]
+    },
+    "Human.bob01": {
+      "vertices": 5203,
+      "bounds": {
+        "x": [
+          -0.09519772231578827,
+          0.08212780207395554
+        ],
+        "y": [
+          -0.13279984891414642,
+          0.14229871332645416
+        ],
+        "z": [
+          0.7710930705070496,
+          0.95950847864151
+        ]
+      },
+      "center": [
+        0.005011886569894565,
+        -0.027719887340687543,
+        0.8755073022228376
+      ]
+    },
+    "Human.female_sportsuit01": {
+      "vertices": 1797,
+      "bounds": {
+        "x": [
+          -0.16600444912910461,
+          0.17628492414951324
+        ],
+        "y": [
+          -0.1687813103199005,
+          0.19802148640155792
+        ],
+        "z": [
+          0.07307334244251251,
+          0.761199414730072
+        ]
+      },
+      "center": [
+        -0.0009793474378930053,
+        0.006992350322427924,
+        0.48006988575077747
+      ]
+    },
+    "Human.shoes05": {
+      "vertices": 1594,
+      "bounds": {
+        "x": [
+          -0.17652854323387146,
+          0.17653252184391022
+        ],
+        "y": [
+          -0.13959351181983948,
+          0.03687835484743118
+        ],
+        "z": [
+          0.007269954774528742,
+          0.2487669587135315
+        ]
+      },
+      "center": [
+        -8.13234424501321e-05,
+        -0.045670151171450346,
+        0.09680386444838855
+      ]
+    }
+  },
+  "modifiers": {
+    "Human": [
+      {
+        "name": "Armature",
+        "type": "ARMATURE",
+        "show_viewport": true,
+        "show_render": true,
+        "object": "Aadwik_Main_Rig"
+      },
+      {
+        "name": "Armature PV",
+        "type": "ARMATURE",
+        "show_viewport": true,
+        "show_render": true,
+        "object": "Aadwik_Main_Rig"
+      },
+      {
+        "name": "Hide helpers",
+        "type": "MASK",
+        "show_viewport": true,
+        "show_render": true,
+        "object": null
+      },
+      {
+        "name": "Delete.shoes05",
+        "type": "MASK",
+        "show_viewport": true,
+        "show_render": true,
+        "object": null
+      },
+      {
+        "name": "Delete.female_sportsuit01",
+        "type": "MASK",
+        "show_viewport": true,
+        "show_render": true,
+        "object": null
+      }
+    ],
+    "Human.bob01": [
+      {
+        "name": "Armature",
+        "type": "ARMATURE",
+        "show_viewport": true,
+        "show_render": true,
+        "object": "Aadwik_Main_Rig"
+      },
+      {
+        "name": "Subdivision",
+        "type": "SUBSURF",
+        "show_viewport": true,
+        "show_render": true,
+        "object": null
+      }
+    ],
+    "Human.female_sportsuit01": [
+      {
+        "name": "Subdivision",
+        "type": "SUBSURF",
+        "show_viewport": true,
+        "show_render": true,
+        "object": null
+      },
+      {
+        "name": "Armature",
+        "type": "ARMATURE",
+        "show_viewport": true,
+        "show_render": true,
+        "object": "Aadwik_Main_Rig"
+      }
+    ],
+    "Human.shoes05": [
+      {
+        "name": "Armature",
+        "type": "ARMATURE",
+        "show_viewport": true,
+        "show_render": true,
+        "object": "Aadwik_Main_Rig"
+      },
+      {
+        "name": "Subdivision",
+        "type": "SUBSURF",
+        "show_viewport": true,
+        "show_render": true,
+        "object": null
+      }
+    ]
+  },
+  "note": "Diagnostic only. No mesh, weights, rig, modifiers, or blend data were changed."
+}

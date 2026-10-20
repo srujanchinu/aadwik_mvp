@@ -1,0 +1,11 @@
+{
+    "title":  "Aadwik Renderer Test",
+    "prompt":  "Test the saved Aadwik character",
+    "scenes":  [
+                   {
+                       "location":  "forest",
+                       "emotion":  "curious",
+                       "action":  "Maya discovers a magical star"
+                   }
+               ]
+}

@@ -1,0 +1,1649 @@
+{
+  "source": "C:\\Users\\olga_Ashok3\\aadwik_mvp\\backend\\generated\\aadwik_character_master_v3.blend",
+  "body": "Human",
+  "object_z_range": [
+    -0.024266600608825684,
+    1.6702837944030762
+  ],
+  "lower_body_cutoff_z": 0.9077361166477204,
+  "vertices_analyzed": 5942,
+  "top_def_groups": [
+    {
+      "bone": "DEF-toe.R",
+      "vertices_in_top8": 1219,
+      "average_top_weight": 0.8523606711042047,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-toe.L",
+      "vertices_in_top8": 1219,
+      "average_top_weight": 0.852360670439711,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-foot.R",
+      "vertices_in_top8": 938,
+      "average_top_weight": 0.43955007186648487,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-foot.L",
+      "vertices_in_top8": 938,
+      "average_top_weight": 0.4395500718458826,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-spine",
+      "vertices_in_top8": 850,
+      "average_top_weight": 0.3288423180412022,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-pelvis-helper.R",
+      "vertices_in_top8": 729,
+      "average_top_weight": 0.2353090120131975,
+      "max_weight": 0.9929898977279663
+    },
+    {
+      "bone": "DEF-pelvis-helper.L",
+      "vertices_in_top8": 677,
+      "average_top_weight": 0.24259327836692376,
+      "max_weight": 0.992987871170044
+    },
+    {
+      "bone": "DEF-thigh.R.001",
+      "vertices_in_top8": 665,
+      "average_top_weight": 0.42672346690494595,
+      "max_weight": 0.9974588751792908
+    },
+    {
+      "bone": "DEF-thigh.L.001",
+      "vertices_in_top8": 665,
+      "average_top_weight": 0.4267233320210773,
+      "max_weight": 0.9974588751792908
+    },
+    {
+      "bone": "DEF-shin.R",
+      "vertices_in_top8": 664,
+      "average_top_weight": 0.36953304497281747,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-shin.L",
+      "vertices_in_top8": 664,
+      "average_top_weight": 0.36953304425205935,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-shin.L.001",
+      "vertices_in_top8": 651,
+      "average_top_weight": 0.39979442264727344,
+      "max_weight": 0.9504047632217407
+    },
+    {
+      "bone": "DEF-shin.R.001",
+      "vertices_in_top8": 649,
+      "average_top_weight": 0.40101779634739276,
+      "max_weight": 0.9504047632217407
+    },
+    {
+      "bone": "DEF-thigh.L",
+      "vertices_in_top8": 630,
+      "average_top_weight": 0.3547312872935205,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-thigh.R",
+      "vertices_in_top8": 604,
+      "average_top_weight": 0.36408603638735093,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-pelvis.L",
+      "vertices_in_top8": 543,
+      "average_top_weight": 0.07872278570252407,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-pelvis.R",
+      "vertices_in_top8": 542,
+      "average_top_weight": 0.08104777180407058,
+      "max_weight": 1.0
+    },
+    {
+      "bone": "DEF-knee-helper.R",
+      "vertices_in_top8": 538,
+      "average_top_weight": 0.22316110037054285,
+      "max_weight": 0.9601844549179077
+    },
+    {
+      "bone": "DEF-knee-helper.L",
+      "vertices_in_top8": 538,
+      "average_top_weight": 0.22316109991267144,
+      "max_weight": 0.9601844549179077
+    },
+    {
+      "bone": "DEF-spine.001",
+      "vertices_in_top8": 441,
+      "average_top_weight": 0.035376300901182996,
+      "max_weight": 0.283026784658432
+    },
+    {
+      "bone": "DEF-pelvis-helper.front.R",
+      "vertices_in_top8": 201,
+      "average_top_weight": 0.14620250622651815,
+      "max_weight": 0.5579696893692017
+    },
+    {
+      "bone": "DEF-pelvis-helper.front.L",
+      "vertices_in_top8": 201,
+      "average_top_weight": 0.146125020654985,
+      "max_weight": 0.5579696893692017
+    },
+    {
+      "bone": "DEF-spine.002",
+      "vertices_in_top8": 31,
+      "average_top_weight": 0.014046838338066253,
+      "max_weight": 0.03731666877865791
+    }
+  ],
+  "sample_vertices": [
+    {
+      "vertex": 15492,
+      "z": -0.0014466047286987305,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9266453981399536
+        ],
+        [
+          "DEF-foot.R",
+          0.07335452735424042
+        ]
+      ],
+      "def_weight_sum": 0.999999925494194,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16796,
+      "z": -0.0014466047286987305,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9266453981399536
+        ],
+        [
+          "DEF-foot.L",
+          0.07335452735424042
+        ]
+      ],
+      "def_weight_sum": 0.999999925494194,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15486,
+      "z": -0.0003565549850463867,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9561232328414917
+        ],
+        [
+          "DEF-foot.R",
+          0.043876729905605316
+        ]
+      ],
+      "def_weight_sum": 0.999999962747097,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16790,
+      "z": -0.0003565549850463867,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9561232328414917
+        ],
+        [
+          "DEF-foot.L",
+          0.043876729905605316
+        ]
+      ],
+      "def_weight_sum": 0.999999962747097,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15499,
+      "z": 2.3424625396728516e-05,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.6195374727249146
+        ],
+        [
+          "DEF-toe.R",
+          0.38046252727508545
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16803,
+      "z": 2.3424625396728516e-05,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.6195374727249146
+        ],
+        [
+          "DEF-toe.L",
+          0.38046252727508545
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15500,
+      "z": 0.00012344121932983398,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.6240236759185791
+        ],
+        [
+          "DEF-toe.R",
+          0.3759763538837433
+        ]
+      ],
+      "def_weight_sum": 1.0000000298023224,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16804,
+      "z": 0.00012344121932983398,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.6240236759185791
+        ],
+        [
+          "DEF-toe.L",
+          0.3759763538837433
+        ]
+      ],
+      "def_weight_sum": 1.0000000298023224,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15473,
+      "z": 0.00021338462829589844,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9986335039138794
+        ],
+        [
+          "DEF-foot.R",
+          0.0013665503356605768
+        ]
+      ],
+      "def_weight_sum": 1.00000005424954,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16777,
+      "z": 0.00021338462829589844,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9986335039138794
+        ],
+        [
+          "DEF-foot.L",
+          0.0013665503356605768
+        ]
+      ],
+      "def_weight_sum": 1.00000005424954,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15491,
+      "z": 0.0013034343719482422,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9118838310241699
+        ],
+        [
+          "DEF-foot.R",
+          0.08811618387699127
+        ]
+      ],
+      "def_weight_sum": 1.0000000149011612,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16795,
+      "z": 0.0013034343719482422,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9118838310241699
+        ],
+        [
+          "DEF-foot.L",
+          0.08811618387699127
+        ]
+      ],
+      "def_weight_sum": 1.0000000149011612,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15523,
+      "z": 0.0013234615325927734,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.9036768674850464
+        ],
+        [
+          "DEF-toe.R",
+          0.09632319211959839
+        ]
+      ],
+      "def_weight_sum": 1.0000000596046448,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16827,
+      "z": 0.0013234615325927734,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.9036768674850464
+        ],
+        [
+          "DEF-toe.L",
+          0.09632319211959839
+        ]
+      ],
+      "def_weight_sum": 1.0000000596046448,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15467,
+      "z": 0.001343369483947754,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9965342283248901
+        ],
+        [
+          "DEF-foot.R",
+          0.0034657716751098633
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16771,
+      "z": 0.001343369483947754,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9965342283248901
+        ],
+        [
+          "DEF-foot.L",
+          0.0034657716751098633
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15449,
+      "z": 0.002123415470123291,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 16753,
+      "z": 0.002123415470123291,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 15455,
+      "z": 0.002233445644378662,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 16759,
+      "z": 0.002233445644378662,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 15536,
+      "z": 0.0028034448623657227,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.9852380752563477
+        ],
+        [
+          "DEF-toe.R",
+          0.014761928468942642
+        ]
+      ],
+      "def_weight_sum": 1.0000000037252903,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16840,
+      "z": 0.0028034448623657227,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.9852380752563477
+        ],
+        [
+          "DEF-toe.L",
+          0.014761928468942642
+        ]
+      ],
+      "def_weight_sum": 1.0000000037252903,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15468,
+      "z": 0.002963423728942871,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9953134059906006
+        ],
+        [
+          "DEF-foot.R",
+          0.004686614032834768
+        ]
+      ],
+      "def_weight_sum": 1.0000000200234354,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16772,
+      "z": 0.002963423728942871,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9953134059906006
+        ],
+        [
+          "DEF-foot.L",
+          0.004686614032834768
+        ]
+      ],
+      "def_weight_sum": 1.0000000200234354,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15453,
+      "z": 0.0032534003257751465,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 16757,
+      "z": 0.0032534003257751465,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 15505,
+      "z": 0.0035634636878967285,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.5529615879058838
+        ],
+        [
+          "DEF-toe.R",
+          0.4470384120941162
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16809,
+      "z": 0.0035634636878967285,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.5529615879058838
+        ],
+        [
+          "DEF-toe.L",
+          0.4470384120941162
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15451,
+      "z": 0.0036434531211853027,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 16755,
+      "z": 0.0036434531211853027,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 15522,
+      "z": 0.0036634206771850586,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.9165337681770325
+        ],
+        [
+          "DEF-toe.R",
+          0.08346623927354813
+        ]
+      ],
+      "def_weight_sum": 1.0000000074505806,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16826,
+      "z": 0.0036634206771850586,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.9165337681770325
+        ],
+        [
+          "DEF-toe.L",
+          0.08346623927354813
+        ]
+      ],
+      "def_weight_sum": 1.0000000074505806,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15501,
+      "z": 0.003743410110473633,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.6067783236503601
+        ],
+        [
+          "DEF-toe.R",
+          0.39322173595428467
+        ]
+      ],
+      "def_weight_sum": 1.0000000596046448,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16805,
+      "z": 0.003743410110473633,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.6067783236503601
+        ],
+        [
+          "DEF-toe.L",
+          0.39322173595428467
+        ]
+      ],
+      "def_weight_sum": 1.0000000596046448,
+      "influence_count": 2
+    },
+    {
+      "vertex": 5796,
+      "z": 0.003853440284729004,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9470409750938416
+        ],
+        [
+          "DEF-foot.R",
+          0.05295902118086815
+        ]
+      ],
+      "def_weight_sum": 0.9999999962747097,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12393,
+      "z": 0.003853440284729004,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9470409154891968
+        ],
+        [
+          "DEF-foot.L",
+          0.05295902118086815
+        ]
+      ],
+      "def_weight_sum": 0.9999999366700649,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15446,
+      "z": 0.004023432731628418,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 16750,
+      "z": 0.004023432731628418,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6541,
+      "z": 0.004233419895172119,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.8947571516036987
+        ],
+        [
+          "DEF-foot.R",
+          0.10272592306137085
+        ],
+        [
+          "DEF-shin.R",
+          0.0025170559529215097
+        ]
+      ],
+      "def_weight_sum": 1.000000130617991,
+      "influence_count": 3
+    },
+    {
+      "vertex": 13137,
+      "z": 0.004233419895172119,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.8947571516036987
+        ],
+        [
+          "DEF-foot.L",
+          0.10272592306137085
+        ],
+        [
+          "DEF-shin.L",
+          0.0025170559529215097
+        ]
+      ],
+      "def_weight_sum": 1.000000130617991,
+      "influence_count": 3
+    },
+    {
+      "vertex": 15490,
+      "z": 0.004373431205749512,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.949057936668396
+        ],
+        [
+          "DEF-foot.R",
+          0.04739903658628464
+        ],
+        [
+          "DEF-shin.R",
+          0.0035431613214313984
+        ]
+      ],
+      "def_weight_sum": 1.000000134576112,
+      "influence_count": 3
+    },
+    {
+      "vertex": 16794,
+      "z": 0.004373431205749512,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.949057936668396
+        ],
+        [
+          "DEF-foot.L",
+          0.04739903658628464
+        ],
+        [
+          "DEF-shin.L",
+          0.0035431613214313984
+        ]
+      ],
+      "def_weight_sum": 1.000000134576112,
+      "influence_count": 3
+    },
+    {
+      "vertex": 4935,
+      "z": 0.004473447799682617,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 11553,
+      "z": 0.004473447799682617,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6505,
+      "z": 0.004823446273803711,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.785965621471405
+        ],
+        [
+          "DEF-foot.R",
+          0.21403439342975616
+        ]
+      ],
+      "def_weight_sum": 1.0000000149011612,
+      "influence_count": 2
+    },
+    {
+      "vertex": 13101,
+      "z": 0.004823446273803711,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.785965621471405
+        ],
+        [
+          "DEF-foot.L",
+          0.21403439342975616
+        ]
+      ],
+      "def_weight_sum": 1.0000000149011612,
+      "influence_count": 2
+    },
+    {
+      "vertex": 6732,
+      "z": 0.004903435707092285,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.612928569316864
+        ],
+        [
+          "DEF-foot.R",
+          0.38321763277053833
+        ],
+        [
+          "DEF-shin.R",
+          0.003853792557492852
+        ]
+      ],
+      "def_weight_sum": 0.9999999946448952,
+      "influence_count": 3
+    },
+    {
+      "vertex": 13328,
+      "z": 0.004903435707092285,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.612928569316864
+        ],
+        [
+          "DEF-foot.L",
+          0.38321763277053833
+        ],
+        [
+          "DEF-shin.L",
+          0.003853792557492852
+        ]
+      ],
+      "def_weight_sum": 0.9999999946448952,
+      "influence_count": 3
+    },
+    {
+      "vertex": 6461,
+      "z": 0.004933416843414307,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 13057,
+      "z": 0.004933416843414307,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 15537,
+      "z": 0.004933416843414307,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.9840863943099976
+        ],
+        [
+          "DEF-toe.R",
+          0.0159135889261961
+        ]
+      ],
+      "def_weight_sum": 0.9999999832361937,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16841,
+      "z": 0.004933416843414307,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.9840863943099976
+        ],
+        [
+          "DEF-toe.L",
+          0.0159135889261961
+        ]
+      ],
+      "def_weight_sum": 0.9999999832361937,
+      "influence_count": 2
+    },
+    {
+      "vertex": 6725,
+      "z": 0.004943430423736572,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.6275073289871216
+        ],
+        [
+          "DEF-foot.R",
+          0.37249264121055603
+        ]
+      ],
+      "def_weight_sum": 0.9999999701976776,
+      "influence_count": 2
+    },
+    {
+      "vertex": 13321,
+      "z": 0.004943430423736572,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.6275073289871216
+        ],
+        [
+          "DEF-foot.L",
+          0.37249264121055603
+        ]
+      ],
+      "def_weight_sum": 0.9999999701976776,
+      "influence_count": 2
+    },
+    {
+      "vertex": 5868,
+      "z": 0.0049634575843811035,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9566015005111694
+        ],
+        [
+          "DEF-foot.R",
+          0.043398428708314896
+        ]
+      ],
+      "def_weight_sum": 0.9999999292194843,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12465,
+      "z": 0.0049634575843811035,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9566015005111694
+        ],
+        [
+          "DEF-foot.L",
+          0.043398428708314896
+        ]
+      ],
+      "def_weight_sum": 0.9999999292194843,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15524,
+      "z": 0.00499337911605835,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.9036241173744202
+        ],
+        [
+          "DEF-toe.R",
+          0.09637588262557983
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16828,
+      "z": 0.00499337911605835,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.9036241173744202
+        ],
+        [
+          "DEF-toe.L",
+          0.09637588262557983
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15460,
+      "z": 0.005163431167602539,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 16764,
+      "z": 0.005163431167602539,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6558,
+      "z": 0.005233407020568848,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9016544818878174
+        ],
+        [
+          "DEF-foot.R",
+          0.09834550321102142
+        ]
+      ],
+      "def_weight_sum": 0.9999999850988388,
+      "influence_count": 2
+    },
+    {
+      "vertex": 13154,
+      "z": 0.005233407020568848,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9016544818878174
+        ],
+        [
+          "DEF-foot.L",
+          0.09834550321102142
+        ]
+      ],
+      "def_weight_sum": 0.9999999850988388,
+      "influence_count": 2
+    },
+    {
+      "vertex": 6164,
+      "z": 0.0052634477615356445,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 12761,
+      "z": 0.0052634477615356445,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6465,
+      "z": 0.0053334832191467285,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 13061,
+      "z": 0.0053334832191467285,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6471,
+      "z": 0.005353391170501709,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 13067,
+      "z": 0.005353391170501709,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6128,
+      "z": 0.005423426628112793,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.896959662437439
+        ],
+        [
+          "DEF-foot.R",
+          0.10304029285907745
+        ]
+      ],
+      "def_weight_sum": 0.9999999552965164,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12725,
+      "z": 0.005423426628112793,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.896959662437439
+        ],
+        [
+          "DEF-foot.L",
+          0.10304029285907745
+        ]
+      ],
+      "def_weight_sum": 0.9999999552965164,
+      "influence_count": 2
+    },
+    {
+      "vertex": 4937,
+      "z": 0.005443453788757324,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 11555,
+      "z": 0.005443453788757324,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6163,
+      "z": 0.00545346736907959,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6169,
+      "z": 0.00545346736907959,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.872207522392273
+        ],
+        [
+          "DEF-foot.R",
+          0.12779250741004944
+        ]
+      ],
+      "def_weight_sum": 1.0000000298023224,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12760,
+      "z": 0.00545346736907959,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 12766,
+      "z": 0.00545346736907959,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.872207522392273
+        ],
+        [
+          "DEF-foot.L",
+          0.12779250741004944
+        ]
+      ],
+      "def_weight_sum": 1.0000000298023224,
+      "influence_count": 2
+    },
+    {
+      "vertex": 6462,
+      "z": 0.0056234002113342285,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 13058,
+      "z": 0.0056234002113342285,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6729,
+      "z": 0.005703389644622803,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.538780927658081
+        ],
+        [
+          "DEF-foot.R",
+          0.46121910214424133
+        ]
+      ],
+      "def_weight_sum": 1.0000000298023224,
+      "influence_count": 2
+    },
+    {
+      "vertex": 13325,
+      "z": 0.005703389644622803,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.538780927658081
+        ],
+        [
+          "DEF-foot.L",
+          0.46121910214424133
+        ]
+      ],
+      "def_weight_sum": 1.0000000298023224,
+      "influence_count": 2
+    },
+    {
+      "vertex": 6726,
+      "z": 0.005853414535522461,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.6305108070373535
+        ],
+        [
+          "DEF-foot.R",
+          0.36660727858543396
+        ],
+        [
+          "DEF-shin.R",
+          0.0028818517457693815
+        ]
+      ],
+      "def_weight_sum": 0.9999999373685569,
+      "influence_count": 3
+    },
+    {
+      "vertex": 13322,
+      "z": 0.005853414535522461,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.6305108070373535
+        ],
+        [
+          "DEF-foot.L",
+          0.36660727858543396
+        ],
+        [
+          "DEF-shin.L",
+          0.0028818517457693815
+        ]
+      ],
+      "def_weight_sum": 0.9999999373685569,
+      "influence_count": 3
+    },
+    {
+      "vertex": 5998,
+      "z": 0.005953431129455566,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.982515811920166
+        ],
+        [
+          "DEF-foot.R",
+          0.017484158277511597
+        ]
+      ],
+      "def_weight_sum": 0.9999999701976776,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12595,
+      "z": 0.005953431129455566,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.982515811920166
+        ],
+        [
+          "DEF-foot.L",
+          0.017484158277511597
+        ]
+      ],
+      "def_weight_sum": 0.9999999701976776,
+      "influence_count": 2
+    },
+    {
+      "vertex": 5786,
+      "z": 0.0059934258460998535,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9976673126220703
+        ],
+        [
+          "DEF-foot.R",
+          0.0023327143862843513
+        ]
+      ],
+      "def_weight_sum": 1.0000000270083547,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12383,
+      "z": 0.0059934258460998535,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9976673126220703
+        ],
+        [
+          "DEF-foot.L",
+          0.0023327143862843513
+        ]
+      ],
+      "def_weight_sum": 1.0000000270083547,
+      "influence_count": 2
+    },
+    {
+      "vertex": 4934,
+      "z": 0.006003439426422119,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 5999,
+      "z": 0.006003439426422119,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.9066917896270752
+        ],
+        [
+          "DEF-foot.R",
+          0.09330818057060242
+        ]
+      ],
+      "def_weight_sum": 0.9999999701976776,
+      "influence_count": 2
+    },
+    {
+      "vertex": 11552,
+      "z": 0.006003439426422119,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 12596,
+      "z": 0.006003439426422119,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.9066917896270752
+        ],
+        [
+          "DEF-foot.L",
+          0.09330818057060242
+        ]
+      ],
+      "def_weight_sum": 0.9999999701976776,
+      "influence_count": 2
+    },
+    {
+      "vertex": 6467,
+      "z": 0.006013453006744385,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 13063,
+      "z": 0.006013453006744385,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6281,
+      "z": 0.006033480167388916,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.7225608229637146
+        ],
+        [
+          "DEF-toe.R",
+          0.27743926644325256
+        ]
+      ],
+      "def_weight_sum": 1.0000000894069672,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12878,
+      "z": 0.006033480167388916,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.7225608229637146
+        ],
+        [
+          "DEF-toe.L",
+          0.27743926644325256
+        ]
+      ],
+      "def_weight_sum": 1.0000000894069672,
+      "influence_count": 2
+    },
+    {
+      "vertex": 15469,
+      "z": 0.006133437156677246,
+      "top_influences": [
+        [
+          "DEF-toe.R",
+          0.998592734336853
+        ],
+        [
+          "DEF-foot.R",
+          0.0014071796322241426
+        ]
+      ],
+      "def_weight_sum": 0.9999999139690772,
+      "influence_count": 2
+    },
+    {
+      "vertex": 16773,
+      "z": 0.006133437156677246,
+      "top_influences": [
+        [
+          "DEF-toe.L",
+          0.998592734336853
+        ],
+        [
+          "DEF-foot.L",
+          0.0014071796322241426
+        ]
+      ],
+      "def_weight_sum": 0.9999999139690772,
+      "influence_count": 2
+    },
+    {
+      "vertex": 6470,
+      "z": 0.006163477897644043,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 13066,
+      "z": 0.006163477897644043,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          1.0
+        ]
+      ],
+      "def_weight_sum": 1.0,
+      "influence_count": 1
+    },
+    {
+      "vertex": 6266,
+      "z": 0.006173491477966309,
+      "top_influences": [
+        [
+          "DEF-foot.R",
+          0.8647338151931763
+        ],
+        [
+          "DEF-toe.R",
+          0.1352662593126297
+        ]
+      ],
+      "def_weight_sum": 1.000000074505806,
+      "influence_count": 2
+    },
+    {
+      "vertex": 12863,
+      "z": 0.006173491477966309,
+      "top_influences": [
+        [
+          "DEF-foot.L",
+          0.8647338151931763
+        ],
+        [
+          "DEF-toe.L",
+          0.1352662593126297
+        ]
+      ],
+      "def_weight_sum": 1.000000074505806,
+      "influence_count": 2
+    }
+  ],
+  "note": "Diagnostic only. No mesh, weights, rig, modifiers, or blend data were changed."
+}

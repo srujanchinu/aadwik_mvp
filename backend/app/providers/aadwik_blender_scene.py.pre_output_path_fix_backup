@@ -1,0 +1,587 @@
+﻿
+"""Aadwik Blender Scene Generator â€” Saved Character Version.
+
+Loads the existing Aadwik character .blend file and renders story frames.
+Does not create a replacement character or rebuild the saved rig.
+
+Blender 5.2 compatible.
+"""
+
+import bpy
+import sys
+import os
+import json
+import argparse
+import math
+from mathutils import Vector
+
+
+DEFAULT_CHARACTER_BLEND = (
+    r"C:\Users\olga_Ashok3\aadwik_mvp\backend\generated"
+    r"\aadwik_character_master_v4_sportsuit_fix.blend"
+)
+
+RIG_NAME = "Aadwik_Main_Rig"
+
+CHARACTER_MESH_NAMES = {
+    "Human",
+    "Human.bob01",
+    "Human.female_sportsuit01",
+    "Human.shoes05",
+}
+
+
+# ------------------------------------------------------------
+# ARGUMENTS
+# ------------------------------------------------------------
+
+def parse_args():
+    argv = (
+        sys.argv[sys.argv.index("--") + 1:]
+        if "--" in sys.argv
+        else []
+    )
+
+    parser = argparse.ArgumentParser(
+        description="Aadwik saved-character movie renderer"
+    )
+
+    parser.add_argument("--plan", required=True)
+    parser.add_argument("--out", required=True)
+    parser.add_argument("--width", type=int, default=640)
+    parser.add_argument("--height", type=int, default=360)
+    parser.add_argument("--fps", type=int, default=8)
+    parser.add_argument(
+        "--character",
+        default=DEFAULT_CHARACTER_BLEND,
+    )
+
+    return parser.parse_args(argv)
+
+
+def log(message):
+    print(
+        f"[AADWIK SAVED CHARACTER] {message}",
+        flush=True,
+    )
+
+
+# ------------------------------------------------------------
+# LOAD THE SAVED CHARACTER
+# ------------------------------------------------------------
+
+def load_character(path):
+    if not os.path.isfile(path):
+        raise FileNotFoundError(
+            f"Saved Aadwik character file not found: {path}"
+        )
+
+    # Load the existing character project.
+    # Do not create a substitute character.
+    bpy.ops.wm.open_mainfile(filepath=path)
+
+    rig = bpy.data.objects.get(RIG_NAME)
+
+    if not rig or rig.type != "ARMATURE":
+        candidates = [
+            obj
+            for obj in bpy.data.objects
+            if obj.type == "ARMATURE"
+            and obj.data.get("rig_id")
+        ]
+
+        if len(candidates) == 1:
+            rig = candidates[0]
+        else:
+            raise RuntimeError(
+                "Could not identify the saved Aadwik Rigify rig. "
+                f"Expected '{RIG_NAME}', "
+                f"found {len(candidates)} candidates."
+            )
+
+    meshes = []
+
+    for obj in bpy.data.objects:
+        if obj.type != "MESH":
+            continue
+
+        is_named_character_mesh = (
+            obj.name in CHARACTER_MESH_NAMES
+        )
+
+        is_parented_to_rig = obj.parent == rig
+
+        has_rig_modifier = any(
+            modifier.type == "ARMATURE"
+            and modifier.object == rig
+            for modifier in obj.modifiers
+        )
+
+        if (
+            is_named_character_mesh
+            or is_parented_to_rig
+            or has_rig_modifier
+        ):
+            meshes.append(obj)
+
+    if not meshes:
+        raise RuntimeError(
+            "The saved character loaded, but no character mesh "
+            "was found. Rendering stopped to avoid creating "
+            "a substitute character."
+        )
+
+    log(f"Loaded character file: {path}")
+    log(f"Rig: {rig.name}")
+    log(f"Bone count: {len(rig.data.bones)}")
+    log(
+        "Character meshes: "
+        + ", ".join(obj.name for obj in meshes)
+    )
+
+    return rig, meshes
+
+
+# ------------------------------------------------------------
+# MATERIALS
+# ------------------------------------------------------------
+
+def ensure_material(name, color, roughness=0.8):
+    mat = (
+        bpy.data.materials.get(name)
+        or bpy.data.materials.new(name)
+    )
+
+    mat.diffuse_color = (*color, 1.0)
+    mat.use_nodes = True
+
+    if mat.node_tree:
+        bsdf = mat.node_tree.nodes.get("Principled BSDF")
+
+        if bsdf:
+            bsdf.inputs["Base Color"].default_value = (
+                *color,
+                1.0,
+            )
+            bsdf.inputs["Roughness"].default_value = roughness
+
+    return mat
+
+
+# ------------------------------------------------------------
+# CHARACTER BOUNDS
+# ------------------------------------------------------------
+
+def bounds_world(objects):
+    points = []
+
+    for obj in objects:
+        if obj.type != "MESH":
+            continue
+
+        for corner in obj.bound_box:
+            points.append(obj.matrix_world @ Vector(corner))
+
+    if not points:
+        raise RuntimeError(
+            "Could not calculate character bounds."
+        )
+
+    low = Vector((
+        min(point.x for point in points),
+        min(point.y for point in points),
+        min(point.z for point in points),
+    ))
+
+    high = Vector((
+        max(point.x for point in points),
+        max(point.y for point in points),
+        max(point.z for point in points),
+    ))
+
+    return low, high
+
+
+def point_camera(camera, target):
+    camera.rotation_euler = (
+        Vector(target) - camera.location
+    ).to_track_quat("-Z", "Y").to_euler()
+
+
+# ------------------------------------------------------------
+# SCENE SETUP
+# ------------------------------------------------------------
+
+def setup_scene(args, meshes):
+    scene = bpy.context.scene
+
+    scene.render.engine = "BLENDER_EEVEE"
+    scene.render.resolution_x = args.width
+    scene.render.resolution_y = args.height
+    scene.render.resolution_percentage = 100
+    scene.render.image_settings.file_format = "PNG"
+    scene.render.image_settings.color_mode = "RGBA"
+    scene.render.fps = args.fps
+    scene.render.film_transparent = False
+
+    world = (
+        scene.world
+        or bpy.data.worlds.new("AADWIK_WORLD")
+    )
+
+    scene.world = world
+    world.use_nodes = True
+
+    background = world.node_tree.nodes.get("Background")
+
+    if background:
+        background.inputs["Color"].default_value = (
+            0.012, 0.022, 0.055, 1
+        )
+        background.inputs["Strength"].default_value = 0.35
+
+    low, high = bounds_world(meshes)
+    center = (low + high) / 2
+    height = max(high.z - low.z, 1.0)
+    ground_z = low.z - 0.035
+
+    # Create a render stage without deleting character objects.
+    ground = bpy.data.objects.get("AADWIK_RENDER_GROUND")
+
+    if ground is None:
+        bpy.ops.mesh.primitive_plane_add(
+            size=max(18.0, height * 8),
+            location=(center.x, center.y, ground_z),
+        )
+
+        ground = bpy.context.object
+        ground.name = "AADWIK_RENDER_GROUND"
+
+        ground.data.materials.append(
+            ensure_material(
+                "AADWIK_Render_Ground_Mat",
+                (0.018, 0.055, 0.038),
+            )
+        )
+
+    # Create or reuse the rendering camera.
+    camera = bpy.data.objects.get("AADWIK_RENDER_CAMERA")
+
+    if camera is None:
+        bpy.ops.object.camera_add()
+        camera = bpy.context.object
+        camera.name = "AADWIK_RENDER_CAMERA"
+
+    camera.location = (
+        center.x,
+        center.y - max(5.8, height * 4.2),
+        center.z + height * 0.18,
+    )
+
+    point_camera(
+        camera,
+        (
+            center.x,
+            center.y,
+            center.z + height * 0.04,
+        ),
+    )
+
+    camera.data.lens = 50
+    scene.camera = camera
+
+    # Lighting.
+    def area_light(
+        name,
+        location,
+        energy,
+        size,
+        color,
+    ):
+        light_obj = bpy.data.objects.get(name)
+
+        if light_obj is None:
+            bpy.ops.object.light_add(
+                type="AREA",
+                location=location,
+            )
+            light_obj = bpy.context.object
+            light_obj.name = name
+
+        light_obj.location = location
+        light_obj.data.energy = energy
+        light_obj.data.shape = "DISK"
+        light_obj.data.size = size
+        light_obj.data.color = color
+
+        point_camera(light_obj, center)
+
+    area_light(
+        "AADWIK_KEY_LIGHT",
+        (center.x + 3, center.y - 4, high.z + 2),
+        850,
+        5,
+        (1.0, 0.78, 0.58),
+    )
+
+    area_light(
+        "AADWIK_FILL_LIGHT",
+        (center.x - 3, center.y - 2, center.z + 1),
+        500,
+        4,
+        (0.48, 0.68, 1.0),
+    )
+
+    area_light(
+        "AADWIK_RIM_LIGHT",
+        (center.x, center.y + 2.5, high.z + 1),
+        1000,
+        3,
+        (0.22, 0.48, 1.0),
+    )
+
+    scene.frame_start = 1
+
+    log(
+        "Scene configured. "
+        f"Character height: {height:.3f}"
+    )
+
+    return scene, center, height
+
+
+# ------------------------------------------------------------
+# SAFE HEAD CONTROL DISCOVERY
+# ------------------------------------------------------------
+
+def find_head_control(rig):
+    preferred_names = [
+        "head",
+        "head_fk",
+        "head.x",
+        "head_control",
+        "head_master",
+    ]
+
+    pose_bones = rig.pose.bones
+
+    for name in preferred_names:
+        if name in pose_bones:
+            return pose_bones[name]
+
+    for bone in pose_bones:
+        name = bone.name.lower()
+
+        if (
+            "head" in name
+            and not name.startswith(
+                ("def-", "org-", "mch-")
+            )
+        ):
+            return bone
+
+    return None
+
+
+# ------------------------------------------------------------
+# STORY SCENE CLASSIFICATION
+# ------------------------------------------------------------
+
+def scene_kind(scene_data):
+    text = " ".join(
+        str(scene_data.get(key, ""))
+        for key in (
+            "action",
+            "description",
+            "emotion",
+            "location",
+            "title",
+        )
+    ).lower()
+
+    if any(
+        word in text
+        for word in (
+            "danger", "fear", "protect", "shadow"
+        )
+    ):
+        return "protect"
+
+    if any(
+        word in text
+        for word in (
+            "happy", "joy", "return",
+            "sunrise", "celebrat",
+        )
+    ):
+        return "joy"
+
+    if any(
+        word in text
+        for word in (
+            "star", "discover", "curious",
+            "find", "wonder",
+        )
+    ):
+        return "discover"
+
+    return "wonder"
+
+
+# ------------------------------------------------------------
+# CAMERA AND ACTING ANIMATION
+# ------------------------------------------------------------
+
+def animate_frame(
+    head,
+    camera,
+    center,
+    height,
+    frame,
+    t,
+    kind,
+    camera_base,
+):
+    # Only animate a discovered head control.
+    # Do not edit the saved rig's structure or constraints.
+    if head:
+        head.rotation_mode = "XYZ"
+
+        head.rotation_euler.y = {
+            "discover": -0.08,
+            "wonder": 0.06,
+            "protect": -0.10,
+            "joy": 0.03,
+        }[kind]
+
+        head.rotation_euler.z = (
+            0.035 * math.sin(t * math.pi * 2)
+        )
+
+        head.keyframe_insert(
+            data_path="rotation_euler",
+            frame=frame,
+            group="Aadwik Story Acting",
+        )
+
+    cam_x, cam_y, cam_z = camera_base
+
+    camera.location = (
+        cam_x + 0.12 * math.sin(t * math.pi),
+        cam_y + 0.18 * math.sin(t * math.pi),
+        cam_z + 0.05 * math.sin(t * math.pi),
+    )
+
+    point_camera(
+        camera,
+        (
+            center.x + 0.08 * t,
+            center.y,
+            center.z + height * 0.02,
+        ),
+    )
+
+    camera.keyframe_insert(
+        data_path="location",
+        frame=frame,
+        group="Aadwik Camera",
+    )
+
+    camera.keyframe_insert(
+        data_path="rotation_euler",
+        frame=frame,
+        group="Aadwik Camera",
+    )
+
+
+# ------------------------------------------------------------
+# MAIN RENDER PIPELINE
+# ------------------------------------------------------------
+
+def main():
+    args = parse_args()
+
+    os.makedirs(os.path.dirname(os.path.abspath(args.out)), exist_ok=True)
+
+    with open(
+        args.plan,
+        "r",
+        encoding="utf-8",
+    ) as file:
+        plan = json.load(file)
+
+    # Load the real saved character and rig.
+    rig, meshes = load_character(args.character)
+
+    # Configure the scene around the saved character.
+    scene, center, height = setup_scene(args, meshes)
+
+    camera = scene.camera
+    camera_base = tuple(camera.location)
+
+    head = find_head_control(rig)
+
+    if head:
+        log(f"Head control found: {head.name}")
+    else:
+        log(
+            "No safe animator-facing head control found. "
+            "Using camera movement only."
+        )
+
+    story_scenes = plan.get("scenes") or [
+        {
+            "emotion": "curious",
+            "action": "discover",
+            "description": "The Aadwik character looks around.",
+        }
+    ]
+
+    
+    frames_per_scene = 16
+    total_frames = len(story_scenes) * frames_per_scene
+
+    scene.frame_start = 1
+    scene.frame_end = total_frames
+    scene.render.image_settings.file_format = "PNG"
+
+    # Treat args.out as the final MP4 file path.
+    output_mp4 = os.path.abspath(args.out)
+    output_dir = os.path.dirname(output_mp4)
+    os.makedirs(output_dir, exist_ok=True)
+
+    # Store rendered frames separately from the MP4.
+    frames_dir = output_dir
+    os.makedirs(frames_dir, exist_ok=True)
+
+    global_frame = 0
+
+    for scene_index, story_scene in enumerate(story_scenes, start=1):
+        kind = scene_kind(story_scene)
+        log(
+            f"Rendering scene {scene_index}/"
+            f"{len(story_scenes)}: {kind}"
+        )
+
+        for local_frame in range(frames_per_scene):
+            global_frame += 1
+            scene.frame_set(global_frame)
+
+            scene.render.filepath = os.path.join(
+                frames_dir,
+                f"frame_{global_frame:06d}.png",
+            )
+            bpy.ops.render.render(write_still=True)
+
+    log(f"Rendered {total_frames} frames to: {frames_dir}")
+
+    log(
+        f"PNG FRAME RENDER COMPLETE: frames={global_frame}, "
+        f"resolution={args.width}x{args.height}, "
+        f"output_dir={frames_dir}"
+    )
+
+if __name__ == "__main__":
+    main()
+
+

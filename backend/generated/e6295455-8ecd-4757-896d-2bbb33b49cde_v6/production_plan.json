@@ -1,0 +1,26 @@
+{
+  "title": "Aadwik Production",
+  "prompt": "A young village girl discovers a magical seed and saves her drought-stricken village through courage and teamwork.",
+  "scenes": [
+    {
+      "location": "forest",
+      "emotion": "curious",
+      "action": "Maya discovers a magical star"
+    },
+    {
+      "location": "forest",
+      "emotion": "wonder",
+      "action": "Maya helps the lost star"
+    },
+    {
+      "location": "forest",
+      "emotion": "protect",
+      "action": "Maya protects the star"
+    },
+    {
+      "location": "forest",
+      "emotion": "joy",
+      "action": "the star returns to the sky"
+    }
+  ]
+}

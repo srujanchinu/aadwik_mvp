@@ -1,0 +1,56 @@
+{
+  "valid": true,
+  "issues": [],
+  "line_count": 4,
+  "schema": "aadwik-dialogue-1.0",
+  "lines": [
+    {
+      "schema": "aadwik-dialogue-1.0",
+      "line_id": "dlg_001",
+      "character_id": "char_tara_v1",
+      "text": "What was that?",
+      "scene_id": "scene_02",
+      "shot_id": "scene_02_shot_01",
+      "start_sec": 0.0,
+      "duration_sec": 1.8,
+      "language": "en-IN",
+      "emotion": "curious"
+    },
+    {
+      "schema": "aadwik-dialogue-1.0",
+      "line_id": "dlg_002",
+      "character_id": "char_guardian_v1",
+      "text": "Please help me.",
+      "scene_id": "scene_04",
+      "shot_id": "scene_04_shot_02",
+      "start_sec": 2.0,
+      "duration_sec": 2.0,
+      "language": "en-IN",
+      "emotion": "weak"
+    },
+    {
+      "schema": "aadwik-dialogue-1.0",
+      "line_id": "dlg_003",
+      "character_id": "char_shadow_creature_v1",
+      "text": "You cannot take the star.",
+      "scene_id": "scene_09",
+      "shot_id": "scene_09_shot_03",
+      "start_sec": 4.2,
+      "duration_sec": 2.4,
+      "language": "en-IN",
+      "emotion": "threatening"
+    },
+    {
+      "schema": "aadwik-dialogue-1.0",
+      "line_id": "dlg_004",
+      "character_id": "char_tara_v1",
+      "text": "I will not leave you.",
+      "scene_id": "scene_10",
+      "shot_id": "scene_10_shot_02",
+      "start_sec": 6.8,
+      "duration_sec": 2.1,
+      "language": "en-IN",
+      "emotion": "courageous"
+    }
+  ]
+}

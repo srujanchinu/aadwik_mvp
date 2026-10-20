@@ -1,0 +1,111 @@
+{
+  "schema": "aadwik-world-library-1.0",
+  "world_count": 7,
+  "worlds": [
+    {
+      "world_id": "world_village_festival_v1",
+      "name": "Village Festival",
+      "type": "village",
+      "locked": true,
+      "visual_lock": {
+        "time": "night",
+        "mood": "warm magical festival",
+        "elements": [
+          "village homes",
+          "festival lights",
+          "open gathering area"
+        ]
+      }
+    },
+    {
+      "world_id": "world_forest_moonlit_v1",
+      "name": "Moonlit Forest",
+      "type": "forest",
+      "locked": true,
+      "visual_lock": {
+        "time": "night",
+        "mood": "mysterious magical",
+        "elements": [
+          "large trees",
+          "moonlight",
+          "glowing trail"
+        ]
+      }
+    },
+    {
+      "world_id": "world_ancient_tree_v1",
+      "name": "Ancient Tree",
+      "type": "ancient_tree",
+      "locked": true,
+      "visual_lock": {
+        "time": "night",
+        "mood": "mystical",
+        "elements": [
+          "ancient tree",
+          "roots",
+          "soft magical light"
+        ]
+      }
+    },
+    {
+      "world_id": "world_glowing_river_v1",
+      "name": "Glowing River",
+      "type": "river",
+      "locked": true,
+      "visual_lock": {
+        "time": "night",
+        "mood": "wonder",
+        "elements": [
+          "glowing water",
+          "riverbank",
+          "reflections"
+        ]
+      }
+    },
+    {
+      "world_id": "world_ancient_temple_v1",
+      "name": "Ancient Stone Temple",
+      "type": "temple",
+      "locked": true,
+      "visual_lock": {
+        "time": "night",
+        "mood": "mysterious",
+        "elements": [
+          "stone pillars",
+          "temple floor",
+          "shadowed chamber"
+        ]
+      }
+    },
+    {
+      "world_id": "world_village_home_v1",
+      "name": "Village Home",
+      "type": "home",
+      "locked": true,
+      "visual_lock": {
+        "time": "sunrise",
+        "mood": "peaceful",
+        "elements": [
+          "simple home",
+          "warm light",
+          "village surroundings"
+        ]
+      }
+    },
+    {
+      "world_id": "world_magical_forest_v1",
+      "name": "Awakened Magical Forest",
+      "type": "forest",
+      "locked": true,
+      "visual_lock": {
+        "time": "sunrise",
+        "mood": "hopeful transformation",
+        "elements": [
+          "trees",
+          "floating light",
+          "glowing plants"
+        ]
+      }
+    }
+  ]
+}

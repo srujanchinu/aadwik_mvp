@@ -1,0 +1,1 @@
+Copy the existing Batch 32 aadwik_animation_scene.py into this folder before packaging.

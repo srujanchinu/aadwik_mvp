@@ -1,0 +1,142 @@
+{
+  "objects": [
+    {
+      "object": "Human.bob01",
+      "materials": [
+        {
+          "name": "Human.bob01",
+          "diffuse_color": [
+            0.1940000057220459,
+            0.029999999329447746,
+            0.014000000432133675,
+            1.0
+          ],
+          "principled": [
+            {
+              "input": "Base Color",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "input": "Roughness",
+              "value": 0.699999988079071
+            },
+            {
+              "input": "Metallic",
+              "value": 0.0
+            },
+            {
+              "input": "Emission Color",
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "input": "Emission Strength",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object": "Human.female_sportsuit01",
+      "materials": [
+        {
+          "name": "Human.female_sportsuit01",
+          "diffuse_color": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.6000000238418579,
+            1.0
+          ],
+          "principled": [
+            {
+              "input": "Base Color",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "input": "Roughness",
+              "value": 0.699999988079071
+            },
+            {
+              "input": "Metallic",
+              "value": 0.0
+            },
+            {
+              "input": "Emission Color",
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "input": "Emission Strength",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "object": "Human.shoes05",
+      "materials": [
+        {
+          "name": "Human.shoes05",
+          "diffuse_color": [
+            0.6000000238418579,
+            0.6000000238418579,
+            0.6000000238418579,
+            1.0
+          ],
+          "principled": [
+            {
+              "input": "Base Color",
+              "value": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            {
+              "input": "Roughness",
+              "value": 0.699999988079071
+            },
+            {
+              "input": "Metallic",
+              "value": 0.0
+            },
+            {
+              "input": "Emission Color",
+              "value": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ]
+            },
+            {
+              "input": "Emission Strength",
+              "value": 0.0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

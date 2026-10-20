@@ -1,0 +1,12 @@
+{
+  "schema": "aadwik-movie-assembly-1.0",
+  "story": "The Last Star",
+  "scenes": 14,
+  "shots": 41,
+  "video": "timeline",
+  "audio": "synchronized_audio",
+  "compositing": true,
+  "titles": true,
+  "subtitles": true,
+  "export_ready": true
+}

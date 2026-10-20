@@ -1,0 +1,42 @@
+{
+  "schema": "aadwik-voice-profile-1.0",
+  "voice_count": 3,
+  "voices": [
+    {
+      "schema": "aadwik-voice-profile-1.0",
+      "voice_id": "voice_tara_v1",
+      "character_id": "char_tara_v1",
+      "name": "Tara",
+      "language": "en-IN",
+      "gender": "female",
+      "age": "young",
+      "style": "curious_natural",
+      "pitch": "medium",
+      "speed": 1.0
+    },
+    {
+      "schema": "aadwik-voice-profile-1.0",
+      "voice_id": "voice_guardian_v1",
+      "character_id": "char_guardian_v1",
+      "name": "Guardian",
+      "language": "en-IN",
+      "gender": "neutral",
+      "age": "young",
+      "style": "gentle_magical",
+      "pitch": "medium",
+      "speed": 0.92
+    },
+    {
+      "schema": "aadwik-voice-profile-1.0",
+      "voice_id": "voice_shadow_v1",
+      "character_id": "char_shadow_creature_v1",
+      "name": "Shadow Creature",
+      "language": "en-IN",
+      "gender": "neutral",
+      "age": "unknown",
+      "style": "mysterious_threatening",
+      "pitch": "low",
+      "speed": 0.88
+    }
+  ]
+}

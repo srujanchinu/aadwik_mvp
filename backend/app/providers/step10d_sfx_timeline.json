@@ -1,0 +1,35 @@
+{
+  "valid": true,
+  "issues": [],
+  "cue_count": 3,
+  "schema": "aadwik-sfx-plan-1.0",
+  "cues": [
+    {
+      "schema": "aadwik-sfx-plan-1.0",
+      "sfx_id": "sfx_001",
+      "scene_id": "scene_02",
+      "shot_id": "scene_02_shot_01",
+      "start_sec": 0.0,
+      "duration_sec": 0.8,
+      "event": "blue_star_fall"
+    },
+    {
+      "schema": "aadwik-sfx-plan-1.0",
+      "sfx_id": "sfx_002",
+      "scene_id": "scene_07",
+      "shot_id": "scene_07_shot_02",
+      "start_sec": 1.2,
+      "duration_sec": 1.0,
+      "event": "river_crossing"
+    },
+    {
+      "schema": "aadwik-sfx-plan-1.0",
+      "sfx_id": "sfx_003",
+      "scene_id": "scene_09",
+      "shot_id": "scene_09_shot_03",
+      "start_sec": 2.4,
+      "duration_sec": 1.5,
+      "event": "shadow_appearance"
+    }
+  ]
+}

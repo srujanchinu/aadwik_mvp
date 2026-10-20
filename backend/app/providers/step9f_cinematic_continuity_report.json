@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "issues": [],
+  "shot_count": 4,
+  "world_locked": true,
+  "characters_locked": true,
+  "props_locked": true,
+  "camera_continuity": true
+}

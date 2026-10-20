@@ -1,0 +1,26 @@
+{
+  "title": "Aadwik Production",
+  "prompt": "A cheerful young boy walks through a beautiful green garden on a sunny morning. He looks around curiously and notices colorful butterflies flying near the flowers.  \nThe boy smiles, walks toward the camera, and happily waves. A gentle breeze moves the trees and flowers around him. He looks at the camera with a warm smile and says, \u201cHello, friends!\u201d  \nHe gives one more little wave as the camera slowly moves closer. The scene ends with the boy smiling while the sunlight shines through the trees.",
+  "scenes": [
+    {
+      "location": "forest",
+      "emotion": "curious",
+      "action": "Maya discovers a magical star"
+    },
+    {
+      "location": "forest",
+      "emotion": "wonder",
+      "action": "Maya helps the lost star"
+    },
+    {
+      "location": "forest",
+      "emotion": "protect",
+      "action": "Maya protects the star"
+    },
+    {
+      "location": "forest",
+      "emotion": "joy",
+      "action": "the star returns to the sky"
+    }
+  ]
+}

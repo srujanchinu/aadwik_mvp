@@ -1,0 +1,143 @@
+[
+  {
+    "object": "Human",
+    "found": true,
+    "vertices": 19158,
+    "dimensions_world": [
+      0.64807,
+      0.25684,
+      0.51064
+    ],
+    "world_bounds": {
+      "x": [
+        -0.49732,
+        0.49732
+      ],
+      "y": [
+        -0.32564,
+        0.11034
+      ],
+      "z": [
+        -0.02427,
+        1.67028
+      ]
+    },
+    "vertical_vertex_distribution": {
+      "bottom_20pct": 3567,
+      "20_40pct": 1170,
+      "40_60pct": 3352,
+      "60_80pct": 4944,
+      "top_20pct": 6125
+    },
+    "armature_modifiers": [
+      "Aadwik_Main_Rig",
+      "Aadwik_Main_Rig"
+    ],
+    "def_group_count": 179
+  },
+  {
+    "object": "Human.bob01",
+    "found": true,
+    "vertices": 5203,
+    "dimensions_world": [
+      0.17733,
+      0.20393,
+      0.17837
+    ],
+    "world_bounds": {
+      "x": [
+        -0.0952,
+        0.08213
+      ],
+      "y": [
+        -0.13353,
+        0.07041
+      ],
+      "z": [
+        0.78113,
+        0.95951
+      ]
+    },
+    "vertical_vertex_distribution": {
+      "bottom_20pct": 717,
+      "20_40pct": 940,
+      "40_60pct": 1237,
+      "60_80pct": 1159,
+      "top_20pct": 1150
+    },
+    "armature_modifiers": [
+      "Aadwik_Main_Rig"
+    ],
+    "def_group_count": 181
+  },
+  {
+    "object": "Human.female_sportsuit01",
+    "found": true,
+    "vertices": 1797,
+    "dimensions_world": [
+      0.32893,
+      0.17339,
+      0.68945
+    ],
+    "world_bounds": {
+      "x": [
+        -0.166,
+        0.16292
+      ],
+      "y": [
+        -0.11018,
+        0.06321
+      ],
+      "z": [
+        0.07258,
+        0.76202
+      ]
+    },
+    "vertical_vertex_distribution": {
+      "bottom_20pct": 239,
+      "20_40pct": 295,
+      "40_60pct": 352,
+      "60_80pct": 191,
+      "top_20pct": 720
+    },
+    "armature_modifiers": [
+      "Aadwik_Main_Rig"
+    ],
+    "def_group_count": 181
+  },
+  {
+    "object": "Human.shoes05",
+    "found": true,
+    "vertices": 1594,
+    "dimensions_world": [
+      0.35306,
+      0.17647,
+      0.15036
+    ],
+    "world_bounds": {
+      "x": [
+        -0.17653,
+        0.17653
+      ],
+      "y": [
+        -0.13959,
+        0.03688
+      ],
+      "z": [
+        0.00727,
+        0.15763
+      ]
+    },
+    "vertical_vertex_distribution": {
+      "bottom_20pct": 546,
+      "20_40pct": 564,
+      "40_60pct": 346,
+      "60_80pct": 66,
+      "top_20pct": 72
+    },
+    "armature_modifiers": [
+      "Aadwik_Main_Rig"
+    ],
+    "def_group_count": 181
+  }
+]

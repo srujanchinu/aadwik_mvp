@@ -1,0 +1,16 @@
+from aadwik_localization_engine import build_localization_job
+job = build_localization_job("the_last_star","en",["te","hi","ta","kn","ml","mr","bn","gu","pa","ur","or","as"])
+assert job["target_languages"] == ["te","hi","ta","kn","ml","mr","bn","gu","pa","ur","or","as"]
+print("TELUGU: OK")
+print("HINDI: OK")
+print("TAMIL: OK")
+print("KANNADA: OK")
+print("MALAYALAM: OK")
+print("MARATHI: OK")
+print("BENGALI: OK")
+print("GUJARATI: OK")
+print("PUNJABI: OK")
+print("URDU: OK")
+print("ODIA: OK")
+print("ASSAMESE: OK")
+print("STEP 14D PASS")

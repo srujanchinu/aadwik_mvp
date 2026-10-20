@@ -1,0 +1,34 @@
+[14:36:43] [STEP ] PHASE 0 - Load file
+[14:36:43] [INFO ] Blender 5.2.1 LTS | mode = APPLY
+[14:36:43] [INFO ] Already loaded: C:\Users\olga_Ashok3\aadwik_mvp\backend\generated\aadwik_character_master_v2.blend
+[14:36:43] [STEP ] PHASE 1 - Inspect scene
+[14:36:43] [INFO ] Rig 'Aadwik_Main_Rig': 930 bones | DEF=181 ORG=174 MCH=341 | rig_id=ww9el55t96425ba6
+[14:36:43] [INFO ] IK/FK switch properties found: 8
+[14:36:43] [INFO ] Body: Human | clothing: ['Human.bob01', 'Human.female_sportsuit01', 'Human.shoes05'] | body parts: []
+[14:36:43] [INFO ] Rigify widgets ignored: 234 | unrelated meshes: []
+[14:36:43] [INFO ] Rig fingerprint BEFORE: {'hash': 'b11f4b511f8d6809aaf07ceefe489befa8ab5bd8e3bcb8d8c7a95c209696a331', 'bones': 930, 'constraints': 1296, 'drivers': 152}
+[14:36:43] [STEP ] Backup
+[14:36:43] [OK   ] Backup written: C:\Users\olga_Ashok3\aadwik_mvp\backend\generated\backups\aadwik_character_master_v2_backup_20261004_143643.blend
+[14:36:43] [STEP ] PHASE 2 - Character & clothing deformation
+[14:36:43] [INFO ] 'Human': armature_mod_ok=True def_groups=179 unweighted=16/19158 bone_parented=False
+[14:36:43] [WARN ] 'Human' has 2 Armature modifiers (duplicates left untouched)
+[14:36:43] [INFO ] 'Human.bob01': armature_mod_ok=True def_groups=179 unweighted=183/5203 bone_parented=False
+[14:36:44] [INFO ] Surface weight transfer 'Human' -> 'Human.bob01': 4886/5203 vertices
+[14:36:44] [OK   ] Rebuilt DEF weights for 'Human.bob01': 181 groups, 4886/5203 vertices
+[14:36:44] [INFO ] 'Human.female_sportsuit01': armature_mod_ok=True def_groups=181 unweighted=1797/1797 bone_parented=False
+[14:36:45] [INFO ] Surface weight transfer 'Human' -> 'Human.female_sportsuit01': 1797/1797 vertices
+[14:36:45] [OK   ] Rebuilt DEF weights for 'Human.female_sportsuit01': 181 groups, 1797/1797 vertices
+[14:36:45] [INFO ] 'Human.shoes05': armature_mod_ok=True def_groups=179 unweighted=0/1594 bone_parented=False
+[14:36:46] [INFO ] Surface weight transfer 'Human' -> 'Human.shoes05': 1540/1594 vertices
+[14:36:46] [OK   ] Rebuilt DEF weights for 'Human.shoes05': 181 groups, 1540/1594 vertices
+[14:36:46] [STEP ] PHASE 2b - Asset organisation
+[14:36:46] [STEP ] PHASE 3 - Rig validation
+[14:36:46] [OK   ] Rig integrity (bones/constraints/drivers unchanged): PASS
+[14:36:46] [WARN ]   Human: WARN
+[14:36:46] [OK   ]   Human.bob01: PASS
+[14:36:46] [OK   ]   Human.female_sportsuit01: PASS
+[14:36:46] [OK   ]   Human.shoes05: PASS
+[14:36:46] [WARN ] Body missing 2 DEF groups (normal for unweighted face/utility bones): ['DEF-eye_iris.L', 'DEF-eye_iris.R']...
+[14:36:46] [INFO ] Body has 156 vertex groups with no matching bone (left untouched)
+[14:36:47] [OK   ] Saved new version: C:\Users\olga_Ashok3\aadwik_mvp\backend\generated\aadwik_character_master_v3.blend
+[14:36:47] [STEP ] Report

@@ -1,0 +1,26 @@
+{
+  "title": "Aadwik Production",
+  "prompt": "The Little Wave\nA little boy walks through a beautiful garden. He sees colorful butterflies and flowers.\nHe smiles at the camera and waves.\n\u201cHello, friends!\u201d \ud83d\udc4b\nThe trees gently move in the breeze. The boy smiles, waves again, and walks happily away.\nThe End.",
+  "scenes": [
+    {
+      "location": "forest",
+      "emotion": "curious",
+      "action": "Maya discovers a magical star"
+    },
+    {
+      "location": "forest",
+      "emotion": "wonder",
+      "action": "Maya helps the lost star"
+    },
+    {
+      "location": "forest",
+      "emotion": "protect",
+      "action": "Maya protects the star"
+    },
+    {
+      "location": "forest",
+      "emotion": "joy",
+      "action": "the star returns to the sky"
+    }
+  ]
+}

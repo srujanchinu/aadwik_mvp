@@ -1,0 +1,35 @@
+{
+  "valid": true,
+  "issues": [],
+  "cue_count": 3,
+  "schema": "aadwik-music-plan-1.0",
+  "cues": [
+    {
+      "schema": "aadwik-music-plan-1.0",
+      "cue_id": "music_001",
+      "scene_id": "scene_01",
+      "start_sec": 0.0,
+      "duration_sec": 5.0,
+      "mood": "wonder",
+      "intensity": 0.35
+    },
+    {
+      "schema": "aadwik-music-plan-1.0",
+      "cue_id": "music_002",
+      "scene_id": "scene_09",
+      "start_sec": 5.0,
+      "duration_sec": 6.0,
+      "mood": "tension",
+      "intensity": 0.75
+    },
+    {
+      "schema": "aadwik-music-plan-1.0",
+      "cue_id": "music_003",
+      "scene_id": "scene_12",
+      "start_sec": 11.0,
+      "duration_sec": 5.0,
+      "mood": "magical_resolution",
+      "intensity": 0.55
+    }
+  ]
+}

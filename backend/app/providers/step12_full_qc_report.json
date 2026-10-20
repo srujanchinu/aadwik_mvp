@@ -1,0 +1,17 @@
+{
+  "schema": "aadwik-qc-report-1.0",
+  "story": "The Last Star",
+  "valid": true,
+  "scene_count": 14,
+  "shot_count": 41,
+  "issues": [],
+  "gates": {
+    "visual": true,
+    "identity": true,
+    "world": true,
+    "audio": true,
+    "timeline": true,
+    "story_completeness": true,
+    "publishing_gate": true
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "schema": "aadwik-blender-job-1.0",
+  "title": "The Last Star",
+  "shots": [
+    {
+      "shot_id": "scene_01_shot_01",
+      "asset_ids": [
+        "char_tara_v1"
+      ],
+      "locked_asset_roots": [
+        "CHAR_TARA_ROOT"
+      ],
+      "asset_reuse_locked": true
+    },
+    {
+      "shot_id": "scene_04_shot_01",
+      "asset_ids": [
+        "char_tara_v1",
+        "char_guardian_v1"
+      ],
+      "locked_asset_roots": [
+        "CHAR_TARA_ROOT",
+        "CHAR_GUARDIAN_ROOT"
+      ],
+      "asset_reuse_locked": true
+    },
+    {
+      "shot_id": "scene_09_shot_01",
+      "asset_ids": [
+        "char_tara_v1",
+        "char_guardian_v1",
+        "char_shadow_creature_v1"
+      ],
+      "locked_asset_roots": [
+        "CHAR_TARA_ROOT",
+        "CHAR_GUARDIAN_ROOT",
+        "CHAR_SHADOW_ROOT"
+      ],
+      "asset_reuse_locked": true
+    },
+    {
+      "shot_id": "scene_14_shot_01",
+      "asset_ids": [
+        "char_tara_v1",
+        "prop_blue_star_v1"
+      ],
+      "locked_asset_roots": [
+        "CHAR_TARA_ROOT",
+        "PROP_BLUE_STAR"
+      ],
+      "asset_reuse_locked": true
+    }
+  ],
+  "asset_library": {
+    "schema": "aadwik-asset-library-1.0",
+    "reuse_mode": "exact",
+    "identity_locked": true,
+    "resolved_asset_references": 8
+  }
+}

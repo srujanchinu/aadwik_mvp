@@ -1,0 +1,234 @@
+"""Aadwik screenplay generation service using the Gemini text API."""
+
+import json
+import os
+import re
+
+from google import genai
+
+DEFAULT_MODEL = "gemini-3.5-flash-lite"
+MAX_EXPANSION_RETRIES = 2
+
+
+class StoryGenerationError(RuntimeError):
+    """Raised when Aadwik cannot create a valid screenplay."""
+
+
+def _get_client():
+    api_key = os.getenv("GEMINI_API_KEY", "").strip()
+    if not api_key:
+        raise StoryGenerationError(
+            "GEMINI_API_KEY is missing. Configure it before generating a story."
+        )
+    if api_key == "PASTE_YOUR_REAL_GEMINI_API_KEY_HERE":
+        raise StoryGenerationError("GEMINI_API_KEY still contains placeholder text.")
+    return genai.Client(api_key=api_key)
+
+
+def _extract_json(response_text: str) -> dict:
+    text = (response_text or "").strip()
+    text = re.sub(r"^\s*```(?:json)?\s*", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s*```\s*$", "", text)
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        start, end = text.find("{"), text.rfind("}")
+        if start < 0 or end <= start:
+            raise StoryGenerationError("Gemini returned no valid JSON screenplay.")
+        try:
+            data = json.loads(text[start:end + 1])
+        except json.JSONDecodeError as exc:
+            raise StoryGenerationError("Gemini returned malformed screenplay JSON.") from exc
+    if not isinstance(data, dict):
+        raise StoryGenerationError("The screenplay response must be a JSON object.")
+    return data
+
+
+def _count_spoken_words(screenplay: dict) -> int:
+    parts = []
+    scenes = screenplay.get("scenes", [])
+    if not isinstance(scenes, list):
+        return 0
+    for scene in scenes:
+        if not isinstance(scene, dict):
+            continue
+        narration = scene.get("narration", "")
+        if isinstance(narration, str):
+            parts.append(narration)
+        dialogue = scene.get("dialogue", [])
+        if isinstance(dialogue, list):
+            parts.extend(
+                line["line"] for line in dialogue
+                if isinstance(line, dict) and isinstance(line.get("line", ""), str)
+            )
+    return len(" ".join(parts).split())
+
+
+def _validate_screenplay(
+    screenplay: dict, *, language: str, genre: str, duration_minutes: int
+) -> dict:
+    title = screenplay.get("title")
+    scenes = screenplay.get("scenes")
+    if not isinstance(title, str) or not title.strip():
+        raise StoryGenerationError("Screenplay is missing its title.")
+    if not isinstance(scenes, list) or not scenes:
+        raise StoryGenerationError("Screenplay contains no scenes.")
+
+    for index, scene in enumerate(scenes, start=1):
+        if not isinstance(scene, dict):
+            raise StoryGenerationError(f"Scene {index} is not a valid object.")
+        scene["scene_number"] = index
+        if not str(scene.get("title", "")).strip():
+            raise StoryGenerationError(f"Scene {index} is missing its title.")
+        if not str(scene.get("action", "")).strip():
+            raise StoryGenerationError(f"Scene {index} is missing its action.")
+        dialogue = scene.get("dialogue", [])
+        if not isinstance(dialogue, list):
+            raise StoryGenerationError(f"Scene {index} dialogue must be a list.")
+        for line_index, line in enumerate(dialogue, start=1):
+            if not isinstance(line, dict) or not isinstance(line.get("line", ""), str):
+                raise StoryGenerationError(
+                    f"Scene {index}, dialogue line {line_index} must be an object with text."
+                )
+        for field, default in (
+            ("setting", ""), ("visual_description", ""), ("narration", ""),
+            ("emotion", ""), ("camera_direction", ""), ("sound_effects", []),
+            ("music_mood", ""),
+        ):
+            scene.setdefault(field, default)
+
+    screenplay["title"] = title.strip()
+    screenplay["language"] = language
+    screenplay["genre"] = genre
+    screenplay["target_duration_minutes"] = duration_minutes
+    screenplay.setdefault("synopsis", "")
+    screenplay.setdefault("characters", [])
+    screenplay.setdefault("ending", "")
+    screenplay.setdefault("moral_or_takeaway", "")
+    screenplay["word_count"] = _count_spoken_words(screenplay)
+    return screenplay
+
+
+def generate_screenplay(
+    prompt: str,
+    language: str = "English",
+    duration_minutes: int = 5,
+    genre: str = "Fantasy",
+    age_group: str = "All Ages",
+    character_type: str = "Mixed",
+) -> dict:
+    """Generate and validate a complete screenplay with ordered scenes and dialogue."""
+    prompt = (prompt or "").strip()
+    language = (language or "English").strip()
+    genre = (genre or "Fantasy").strip()
+    age_group = (age_group or "All Ages").strip()
+    character_type = (character_type or "Mixed").strip()
+
+    if len(prompt) < 5:
+        raise StoryGenerationError("Please provide a story idea of at least 5 characters.")
+    if not isinstance(duration_minutes, int) or not 1 <= duration_minutes <= 30:
+        raise StoryGenerationError("Movie duration must be an integer between 1 and 30 minutes.")
+
+    target_words = duration_minutes * 135
+    minimum_words = int(target_words * 0.90)
+    maximum_words = int(target_words * 1.15)
+    model = os.getenv("GEMINI_TEXT_MODEL", DEFAULT_MODEL).strip() or DEFAULT_MODEL
+    client = _get_client()
+
+    instructions = f"""
+You are Aadwik's professional screenplay writer. Write an original, emotionally engaging,
+natural-sounding, complete screenplay based on the story idea.
+
+LENGTH:
+- Target about {target_words} spoken words; acceptable range {minimum_words}-{maximum_words}.
+- Count narration and dialogue only, not visual descriptions or metadata.
+- Never return a synopsis or compressed summary instead of a full screenplay.
+- Add meaningful events, natural dialogue, and narration until the required length is met.
+
+STORY QUALITY:
+- Establish characters, setting, goal, and central problem.
+- Develop connected events, character choices, obstacles, and consequences.
+- Build emotional engagement, a clear climax, and a satisfying ending.
+- Respect language, genre, audience age, and character type.
+- For children's stories, use age-appropriate language and a clear positive takeaway.
+- Avoid repetitive filler and placeholders.
+
+Each scene must contain scene_number, title, setting, visual_description, action, dialogue,
+narration, emotion, camera_direction, sound_effects, and music_mood. Dialogue is a list
+of objects with character and line. Make visual action concrete enough to animate.
+
+Return valid JSON only in this structure:
+{{
+  "title": "Story title",
+  "language": "{language}",
+  "genre": "{genre}",
+  "target_duration_minutes": {duration_minutes},
+  "synopsis": "Short synopsis",
+  "characters": [{{"name": "Name", "description": "Appearance and personality", "role": "Role"}}],
+  "scenes": [{{
+    "scene_number": 1, "title": "Scene title", "setting": "Location and time",
+    "visual_description": "Visible action and environment", "action": "What happens",
+    "dialogue": [{{"character": "Character name", "line": "Spoken line in {language}"}}],
+    "narration": "Narration in {language}", "emotion": "Emotional tone",
+    "camera_direction": "Camera framing and movement",
+    "sound_effects": ["Relevant sound effects"], "music_mood": "Music mood"
+  }}],
+  "ending": "How the story concludes",
+  "moral_or_takeaway": "Lesson, or empty string if unsuitable"
+}}
+
+Settings: language={language}; genre={genre}; audience={age_group};
+character_type={character_type}; duration={duration_minutes} minutes.
+Use natural speakable language, consistent character motivations, a beginning, escalating
+events, turning points, climax, and satisfying ending. Every scene advances the plot.
+Return no explanation outside the JSON.
+""".strip()
+
+    previous_screenplay = None
+    last_word_count = 0
+
+    for attempt in range(MAX_EXPANSION_RETRIES + 1):
+        if attempt == 0:
+            contents = instructions + "\n\nSTORY IDEA:\n" + prompt
+        else:
+            contents = (
+                instructions
+                + f"\n\nEXPANSION RETRY {attempt}: The previous screenplay had "
+                + f"{last_word_count} spoken words; at least {minimum_words} are required. "
+                + "Expand the complete story with additional meaningful events, natural "
+                + "dialogue, and narration. Do not add visual descriptions as a substitute "
+                + "for spoken words. Return the complete JSON screenplay.\n\nSTORY IDEA:\n"
+                + prompt
+                + "\n\nPREVIOUS SCREENPLAY TO IMPROVE:\n"
+                + json.dumps(previous_screenplay, ensure_ascii=False)
+            )
+        try:
+            response = client.models.generate_content(
+                model=model,
+                contents=contents,
+                config={"response_mime_type": "application/json", "temperature": 0.8},
+            )
+            screenplay = _extract_json(getattr(response, "text", "") or "")
+            screenplay = _validate_screenplay(
+                screenplay,
+                language=language,
+                genre=genre,
+                duration_minutes=duration_minutes,
+            )
+        except StoryGenerationError:
+            raise
+        except Exception as exc:
+            raise StoryGenerationError(
+                f"Gemini screenplay generation failed: {type(exc).__name__}: {exc}"
+            ) from exc
+
+        last_word_count = screenplay["word_count"]
+        if minimum_words <= last_word_count <= maximum_words:
+            return screenplay
+        previous_screenplay = screenplay
+
+    raise StoryGenerationError(
+        f"Screenplay length validation failed after {MAX_EXPANSION_RETRIES} retries: "
+        f"{last_word_count} spoken words; required range is {minimum_words}-{maximum_words} "
+        f"for {duration_minutes} minute(s). Try again or adjust the requested duration."
+    )

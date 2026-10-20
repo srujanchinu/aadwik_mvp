@@ -1,0 +1,119 @@
+{
+  "source": "C:\\Users\\olga_Ashok3\\aadwik_mvp\\backend\\generated\\aadwik_character_master_v3.blend",
+  "output": "C:\\Users\\olga_Ashok3\\aadwik_mvp\\backend\\generated\\aadwik_character_master_v4_legfix.blend",
+  "pose": {
+    "bone": "foot_ik.L",
+    "z": 0.09
+  },
+  "region": [
+    0.45,
+    0.95
+  ],
+  "neutral_vertices": 9368,
+  "posed_vertices": 9368,
+  "avg_displacement": 3.4649994501454136e-05,
+  "max_displacement": 0.011989087121184648,
+  "top_vertices": [
+    {
+      "index": 8554,
+      "displacement": 0.011989087121184648
+    },
+    {
+      "index": 8542,
+      "displacement": 0.011297441406217603
+    },
+    {
+      "index": 8557,
+      "displacement": 0.01056498968496293
+    },
+    {
+      "index": 8522,
+      "displacement": 0.010105245188803399
+    },
+    {
+      "index": 8514,
+      "displacement": 0.009754278158628768
+    },
+    {
+      "index": 8541,
+      "displacement": 0.009493101687134933
+    },
+    {
+      "index": 8521,
+      "displacement": 0.009199750568934415
+    },
+    {
+      "index": 8515,
+      "displacement": 0.008670461679678419
+    },
+    {
+      "index": 8558,
+      "displacement": 0.008062627390422586
+    },
+    {
+      "index": 8516,
+      "displacement": 0.007164117542996893
+    },
+    {
+      "index": 8538,
+      "displacement": 0.0068798681224140935
+    },
+    {
+      "index": 8520,
+      "displacement": 0.006568891518704135
+    },
+    {
+      "index": 8539,
+      "displacement": 0.0064191634047973236
+    },
+    {
+      "index": 8574,
+      "displacement": 0.006289056401309255
+    },
+    {
+      "index": 8513,
+      "displacement": 0.006173770955238019
+    },
+    {
+      "index": 8536,
+      "displacement": 0.005822077413420965
+    },
+    {
+      "index": 8549,
+      "displacement": 0.005689500779532226
+    },
+    {
+      "index": 8517,
+      "displacement": 0.005549325529094113
+    },
+    {
+      "index": 8575,
+      "displacement": 0.005548830453332665
+    },
+    {
+      "index": 8552,
+      "displacement": 0.005263237659507947
+    },
+    {
+      "index": 8535,
+      "displacement": 0.00520465650851273
+    },
+    {
+      "index": 8532,
+      "displacement": 0.005059328750370615
+    },
+    {
+      "index": 8576,
+      "displacement": 0.004533157281962925
+    },
+    {
+      "index": 8543,
+      "displacement": 0.004493183510506451
+    },
+    {
+      "index": 8553,
+      "displacement": 0.004194549145710287
+    }
+  ],
+  "fix": "No automatic weight overwrite yet; diagnostic is saved first to prevent damaging the master."
+}
