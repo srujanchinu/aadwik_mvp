@@ -28,16 +28,16 @@ jobs:
           cache: true
 
       - name: Get Dependencies
-        working-directory: ./YOUR_SUBFOLDER
+        working-directory: ./mobile
         run: flutter pub get
 
       - name: Build Universal Release APK
-        working-directory: ./YOUR_SUBFOLDER
+        working-directory: ./mobile
         run: flutter build apk --release
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
         with:
           name: AadwikAI-Release-APK
-          path: ./YOUR_SUBFOLDER/build/app/outputs/flutter-apk/app-release.apk
+          path: ./mobile/build/app/outputs/flutter-apk/app-release.apk
           if-no-files-found: error
