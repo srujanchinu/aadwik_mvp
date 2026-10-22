@@ -3,6 +3,6 @@ class AppConfig {
   // Android emulator default: http://10.0.2.2:8000
   static const String baseUrl = String.fromEnvironment(
     'AADWIK_API_BASE_URL',
-    defaultValue: 'http://localhost:8000'
+    defaultValue: 'http://192.168.1.4:8000'
   );
 }
